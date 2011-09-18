@@ -4,7 +4,7 @@
 :Web:         Ver [LACOSOX2010]_ para una descripción más detallada
 :Autor:       Gustavo Lacoste <gustavo@lacosox.org>
 :Fecha:       $Date: 2011-09-14 14:00:00 $
-:Versión:     $0.2 $
+:Versión:     0.2 
 :Lincencia:   GPLV3
 :Descripción: Base de datos en diferentes formatos de los códigos territoriales chilenos, útil para implementarlo en proyectos informáticos Chilenos.
 
