@@ -28,7 +28,7 @@ alguna entidad del estado; es decir, no se da ninguna garantía, pero funciona.
 
 Formatos disponibles
 =====================================
-La BD la puedes bajar en los formatos se describen en la tabla siguiente:
+La BD la puedes bajar en los formatos se describen en la tabla siguiente, en la carpeta de cada formato encontrarás un README que explica como implementar y usar el formato específico:
 
 +-----------------------+----------------------+------+-----------------+
 |     **Formato**       |     **Ideal para**   |**IR**| **Codificación**|
