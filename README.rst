@@ -37,10 +37,6 @@ La BD la puedes bajar en los formatos se describen en la tabla siguiente, en la 
 +-----------------------+----------------------+------+-----------------+
 | PosgreSQL_InnoDB_utf8 |     ``PosgreSQL``    | Sí   |      UTF-8      |
 +-----------------------+----------------------+------+-----------------+
-|      YAML_utf8        | ``PHP Doctrine ORM`` | Sí   |      UTF-8      |
-+-----------------------+----------------------+------+-----------------+
-|      JSON_utf8        |   ``AJAX Response``  | Sí   |      UTF-8      |
-+-----------------------+----------------------+------+-----------------+
 
 IR= Integridad referencial
 
