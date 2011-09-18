@@ -49,3 +49,9 @@ IR= Integridad referencial
 .. [MININT2010] http://www.sinim.cl/archivos/centro_descargas/modificacion_instructivo_pres_codigos.pdf
 
 .. [SINIM2011] http://www.sinim.cl/
+
+
+¿Quieres aportar?
+=====================================
+
+Si quieres aportar a este proyecto sólo envianos un mensaje para agregarte al repositorio y así puedas enviar los cambios. 
