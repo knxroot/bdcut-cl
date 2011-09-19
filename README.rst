@@ -4,7 +4,7 @@
 :Web:         Ver [LACOSOX2010]_ para una descripción más detallada
 :Fecha:       $Date: 2011-09-14 14:00:00 $
 :Versión:     0.2 
-:Lincencia:   GPLV3
+:Licencia:   GPLV3
 :Descripción: Base de datos en diferentes formatos de los códigos territoriales chilenos, útil para implementarlo en proyectos informáticos Chilenos.
 
 Acerca del proyecto
@@ -34,10 +34,24 @@ La BD la puedes bajar en los formatos se describen en la tabla siguiente, en la 
 +-----------------------+----------------------+------+-----------------+
 | MySQL5_InnoDB_utf8    |    ``phpMyAdmin3``   | Sí   |      UTF-8      |
 +-----------------------+----------------------+------+-----------------+
-| PosgreSQL_InnoDB_utf8 |     ``PosgreSQL``    | Sí   |      UTF-8      |
+| PosgreSQL_utf8        |     ``PosgreSQL``    | Sí   |      UTF-8      |
 +-----------------------+----------------------+------+-----------------+
 
 IR= Integridad referencial
+
+
+Formatos Futuros
+=====================================
+Tenemos la idea de seguir trabajando en esto y generar nuevos formatos que faciliten el trabajo :
+
++-----------------------+----------------------+
+|     **Formato**       |     **Ideal para**   |
++-----------------------+----------------------+
+| XML				    |		   AJAX		   |
++-----------------------+----------------------+
+| JSON					|		   AJAX		   |
++-----------------------+----------------------+
+
 
 .. [LACOSOX2010] http://www.lacosox.org/?q=codigo_territorial_sql_Regiones_provincias_comunas_de_Chile
 
@@ -49,4 +63,4 @@ IR= Integridad referencial
 ¿Quieres aportar?
 =====================================
 
-Si quieres aportar a este proyecto sólo envianos un mensaje para agregarte al repositorio y así puedas enviar los cambios. 
+Si quieres aportar a este proyecto sólo envíanos un mensaje para agregarte al repositorio y así puedas enviar los cambios. 
