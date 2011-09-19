@@ -1,3 +1,22 @@
+/**********************************************************
+* Este archivo contiene el Script de creación de la base de
+* datos de los códigos territoriales para Chile 
+* (actualizados a la fecha 13/09/2011)
+*
+* La base de datos está basada en el último documento
+* oficial publicado por el "Sistema nacional de información
+* municipal Chileno" (SINIM) el cual a su vez se basa en el
+* Decreto Exento Nº 817 del Ministerio del Interior,
+* publicado en el Diario Oficial el día 26 de Marzo de 2010.
+*
+* Este Script está escrito para Mysql >= 5 con InnoDB
+*
+* Autor: Gustavo Lacoste gustavo@lacosox.org
+* http://www.lacosox.org
+* Dirección del proyecto en GitHub:
+*						https://github.com/knxroot/BDCUT_CL
+*
+**********************************************************/
 -- phpMyAdmin SQL Dump
 -- version 3.3.7deb5
 -- http://www.phpmyadmin.net
