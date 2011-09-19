@@ -2,7 +2,7 @@
  Chile: "Códigos territoriales (Región, Provincia, Comuna)"
 =====================================
 :Web:         Ver [LACOSOX2010]_ para una descripción más detallada
-:Autor:       Gustavo Lacoste <gustavo@lacosox.org>
+:Autor:       Ver AUTHORS.rst
 :Fecha:       $Date: 2011-09-14 14:00:00 $
 :Versión:     0.2 
 :Lincencia:   GPLV3
