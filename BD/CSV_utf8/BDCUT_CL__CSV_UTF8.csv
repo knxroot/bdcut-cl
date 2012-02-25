@@ -1,0 +1,347 @@
+COMUNA_NOMBRE,COMUNA_ID,PROVINCIA_NOMBRE,PROVINCIA_ID,REGION_NOMBRE,REGION_ID
+Iquique,1101,Iquique,11,Tarapacá,1
+Alto Hospicio,1107,Iquique,11,Tarapacá,1
+Pozo Almonte,1401,Tamarugal,14,Tarapacá,1
+Camiña,1402,Tamarugal,14,Tarapacá,1
+Colchane,1403,Tamarugal,14,Tarapacá,1
+Huara,1404,Tamarugal,14,Tarapacá,1
+Pica,1405,Tamarugal,14,Tarapacá,1
+Antofagasta,2101,Antofagasta,21,Antofagasta,2
+Mejillones,2102,Antofagasta,21,Antofagasta,2
+Sierra Gorda,2103,Antofagasta,21,Antofagasta,2
+Taltal,2104,Antofagasta,21,Antofagasta,2
+Calama,2201,El Loa,22,Antofagasta,2
+Ollagüe,2202,El Loa,22,Antofagasta,2
+San Pedro de Atacama,2203,El Loa,22,Antofagasta,2
+Tocopilla,2301,Tocopilla,23,Antofagasta,2
+María Elena,2302,Tocopilla,23,Antofagasta,2
+Copiapó,3101,Copiapó,31,Atacama,3
+Caldera,3102,Copiapó,31,Atacama,3
+Tierra Amarilla,3103,Copiapó,31,Atacama,3
+Chañaral,3201,Chañaral,32,Atacama,3
+Diego de Almagro,3202,Chañaral,32,Atacama,3
+Vallenar,3301,Huasco,33,Atacama,3
+Alto del Carmen,3302,Huasco,33,Atacama,3
+Freirina,3303,Huasco,33,Atacama,3
+Huasco,3304,Huasco,33,Atacama,3
+La Serena,4101,Elqui,41,Coquimbo,4
+Coquimbo,4102,Elqui,41,Coquimbo,4
+Andacollo,4103,Elqui,41,Coquimbo,4
+La Higuera,4104,Elqui,41,Coquimbo,4
+Paihuano,4105,Elqui,41,Coquimbo,4
+Vicuña,4106,Elqui,41,Coquimbo,4
+Illapel,4201,Choapa,42,Coquimbo,4
+Canela,4202,Choapa,42,Coquimbo,4
+Los Vilos,4203,Choapa,42,Coquimbo,4
+Salamanca,4204,Choapa,42,Coquimbo,4
+Ovalle,4301,Limarí,43,Coquimbo,4
+Combarbalá,4302,Limarí,43,Coquimbo,4
+Monte Patria,4303,Limarí,43,Coquimbo,4
+Punitaqui,4304,Limarí,43,Coquimbo,4
+Río Hurtado,4305,Limarí,43,Coquimbo,4
+Valparaíso,5101,Valparaíso,51,Valparaíso,5
+Casablanca,5102,Valparaíso,51,Valparaíso,5
+Concón,5103,Valparaíso,51,Valparaíso,5
+Juan Fernández,5104,Valparaíso,51,Valparaíso,5
+Puchuncaví,5105,Valparaíso,51,Valparaíso,5
+Quintero,5107,Valparaíso,51,Valparaíso,5
+Viña del Mar,5109,Valparaíso,51,Valparaíso,5
+Isla de Pascua,5201,Isla de Pascua,52,Valparaíso,5
+Los Andes,5301,Los Andes,53,Valparaíso,5
+Calle Larga,5302,Los Andes,53,Valparaíso,5
+Rinconada,5303,Los Andes,53,Valparaíso,5
+San Esteban,5304,Los Andes,53,Valparaíso,5
+La Ligua,5401,Petorca,54,Valparaíso,5
+Cabildo,5402,Petorca,54,Valparaíso,5
+Papudo,5403,Petorca,54,Valparaíso,5
+Petorca,5404,Petorca,54,Valparaíso,5
+Zapallar,5405,Petorca,54,Valparaíso,5
+Quillota,5501,Quillota,55,Valparaíso,5
+La Calera,5502,Quillota,55,Valparaíso,5
+Hijuelas,5503,Quillota,55,Valparaíso,5
+La Cruz,5504,Quillota,55,Valparaíso,5
+Nogales,5506,Quillota,55,Valparaíso,5
+San Antonio,5601,San Antonio,56,Valparaíso,5
+Algarrobo,5602,San Antonio,56,Valparaíso,5
+Cartagena,5603,San Antonio,56,Valparaíso,5
+El Quisco,5604,San Antonio,56,Valparaíso,5
+El Tabo,5605,San Antonio,56,Valparaíso,5
+Santo Domingo,5606,San Antonio,56,Valparaíso,5
+San Felipe,5701,San Felipe de Aconcagua,57,Valparaíso,5
+Catemu,5702,San Felipe de Aconcagua,57,Valparaíso,5
+Llay Llay,5703,San Felipe de Aconcagua,57,Valparaíso,5
+Panquehue,5704,San Felipe de Aconcagua,57,Valparaíso,5
+Putaendo,5705,San Felipe de Aconcagua,57,Valparaíso,5
+Santa María,5706,San Felipe de Aconcagua,57,Valparaíso,5
+Quilpué,5801,Marga Marga,58,Valparaíso,5
+Limache,5802,Marga Marga,58,Valparaíso,5
+Olmué,5803,Marga Marga,58,Valparaíso,5
+Villa Alemana,5804,Marga Marga,58,Valparaíso,5
+Rancagua,6101,Cachapoal,61,Región del Libertador Gral. Bernardo O'Higgins,6
+Codegua,6102,Cachapoal,61,Región del Libertador Gral. Bernardo O'Higgins,6
+Coinco,6103,Cachapoal,61,Región del Libertador Gral. Bernardo O'Higgins,6
+Coltauco,6104,Cachapoal,61,Región del Libertador Gral. Bernardo O'Higgins,6
+Doñihue,6105,Cachapoal,61,Región del Libertador Gral. Bernardo O'Higgins,6
+Graneros,6106,Cachapoal,61,Región del Libertador Gral. Bernardo O'Higgins,6
+Las Cabras,6107,Cachapoal,61,Región del Libertador Gral. Bernardo O'Higgins,6
+Machalí,6108,Cachapoal,61,Región del Libertador Gral. Bernardo O'Higgins,6
+Malloa,6109,Cachapoal,61,Región del Libertador Gral. Bernardo O'Higgins,6
+Mostazal,6110,Cachapoal,61,Región del Libertador Gral. Bernardo O'Higgins,6
+Olivar,6111,Cachapoal,61,Región del Libertador Gral. Bernardo O'Higgins,6
+Peumo,6112,Cachapoal,61,Región del Libertador Gral. Bernardo O'Higgins,6
+Pichidegua,6113,Cachapoal,61,Región del Libertador Gral. Bernardo O'Higgins,6
+Quinta de Tilcoco,6114,Cachapoal,61,Región del Libertador Gral. Bernardo O'Higgins,6
+Rengo,6115,Cachapoal,61,Región del Libertador Gral. Bernardo O'Higgins,6
+Requínoa,6116,Cachapoal,61,Región del Libertador Gral. Bernardo O'Higgins,6
+San Vicente,6117,Cachapoal,61,Región del Libertador Gral. Bernardo O'Higgins,6
+Pichilemu,6201,Cardenal Caro,62,Región del Libertador Gral. Bernardo O'Higgins,6
+La Estrella,6202,Cardenal Caro,62,Región del Libertador Gral. Bernardo O'Higgins,6
+Litueche,6203,Cardenal Caro,62,Región del Libertador Gral. Bernardo O'Higgins,6
+Marchihue,6204,Cardenal Caro,62,Región del Libertador Gral. Bernardo O'Higgins,6
+Navidad,6205,Cardenal Caro,62,Región del Libertador Gral. Bernardo O'Higgins,6
+Paredones,6206,Cardenal Caro,62,Región del Libertador Gral. Bernardo O'Higgins,6
+San Fernando,6301,Colchagua,63,Región del Libertador Gral. Bernardo O'Higgins,6
+Chépica,6302,Colchagua,63,Región del Libertador Gral. Bernardo O'Higgins,6
+Chimbarongo,6303,Colchagua,63,Región del Libertador Gral. Bernardo O'Higgins,6
+Lolol,6304,Colchagua,63,Región del Libertador Gral. Bernardo O'Higgins,6
+Nancagua,6305,Colchagua,63,Región del Libertador Gral. Bernardo O'Higgins,6
+Palmilla,6306,Colchagua,63,Región del Libertador Gral. Bernardo O'Higgins,6
+Peralillo,6307,Colchagua,63,Región del Libertador Gral. Bernardo O'Higgins,6
+Placilla,6308,Colchagua,63,Región del Libertador Gral. Bernardo O'Higgins,6
+Pumanque,6309,Colchagua,63,Región del Libertador Gral. Bernardo O'Higgins,6
+Santa Cruz,6310,Colchagua,63,Región del Libertador Gral. Bernardo O'Higgins,6
+Talca,7101,Talca,71,Región del Maule,7
+Constitución,7102,Talca,71,Región del Maule,7
+Curepto,7103,Talca,71,Región del Maule,7
+Empedrado,7104,Talca,71,Región del Maule,7
+Maule,7105,Talca,71,Región del Maule,7
+Pelarco,7106,Talca,71,Región del Maule,7
+Pencahue,7107,Talca,71,Región del Maule,7
+Río Claro,7108,Talca,71,Región del Maule,7
+San Clemente,7109,Talca,71,Región del Maule,7
+San Rafael,7110,Talca,71,Región del Maule,7
+Cauquenes,7201,Cauquenes,72,Región del Maule,7
+Chanco,7202,Cauquenes,72,Región del Maule,7
+Pelluhue,7203,Cauquenes,72,Región del Maule,7
+Curicó,7301,Curicó,73,Región del Maule,7
+Hualañé,7302,Curicó,73,Región del Maule,7
+Licantén,7303,Curicó,73,Región del Maule,7
+Molina,7304,Curicó,73,Región del Maule,7
+Rauco,7305,Curicó,73,Región del Maule,7
+Romeral,7306,Curicó,73,Región del Maule,7
+Sagrada Familia,7307,Curicó,73,Región del Maule,7
+Teno,7308,Curicó,73,Región del Maule,7
+Vichuquén,7309,Curicó,73,Región del Maule,7
+Linares,7401,Linares,74,Región del Maule,7
+Colbún,7402,Linares,74,Región del Maule,7
+Longaví,7403,Linares,74,Región del Maule,7
+Parral,7404,Linares,74,Región del Maule,7
+Retiro,7405,Linares,74,Región del Maule,7
+San Javier,7406,Linares,74,Región del Maule,7
+Villa Alegre,7407,Linares,74,Región del Maule,7
+Yerbas Buenas,7408,Linares,74,Región del Maule,7
+Concepción,8101,Concepción,81,Región del Biobío,8
+Coronel,8102,Concepción,81,Región del Biobío,8
+Chiguayante,8103,Concepción,81,Región del Biobío,8
+Florida,8104,Concepción,81,Región del Biobío,8
+Hualqui,8105,Concepción,81,Región del Biobío,8
+Lota,8106,Concepción,81,Región del Biobío,8
+Penco,8107,Concepción,81,Región del Biobío,8
+San Pedro de la Paz,8108,Concepción,81,Región del Biobío,8
+Santa Juana,8109,Concepción,81,Región del Biobío,8
+Talcahuano,8110,Concepción,81,Región del Biobío,8
+Tomé,8111,Concepción,81,Región del Biobío,8
+Hualpén,8112,Concepción,81,Región del Biobío,8
+Lebu,8201,Arauco,82,Región del Biobío,8
+Arauco,8202,Arauco,82,Región del Biobío,8
+Cañete,8203,Arauco,82,Región del Biobío,8
+Contulmo,8204,Arauco,82,Región del Biobío,8
+Curanilahue,8205,Arauco,82,Región del Biobío,8
+Los Álamos,8206,Arauco,82,Región del Biobío,8
+Tirúa,8207,Arauco,82,Región del Biobío,8
+Los Ángeles,8301,Biobío,83,Región del Biobío,8
+Antuco,8302,Biobío,83,Región del Biobío,8
+Cabrero,8303,Biobío,83,Región del Biobío,8
+Laja,8304,Biobío,83,Región del Biobío,8
+Mulchén,8305,Biobío,83,Región del Biobío,8
+Nacimiento,8306,Biobío,83,Región del Biobío,8
+Negrete,8307,Biobío,83,Región del Biobío,8
+Quilaco,8308,Biobío,83,Región del Biobío,8
+Quilleco,8309,Biobío,83,Región del Biobío,8
+San Rosendo,8310,Biobío,83,Región del Biobío,8
+Santa Bárbara,8311,Biobío,83,Región del Biobío,8
+Tucapel,8312,Biobío,83,Región del Biobío,8
+Yumbel,8313,Biobío,83,Región del Biobío,8
+Alto Biobío,8314,Biobío,83,Región del Biobío,8
+Chillán,8401,Ñuble,84,Región del Biobío,8
+Bulnes,8402,Ñuble,84,Región del Biobío,8
+Cobquecura,8403,Ñuble,84,Región del Biobío,8
+Coelemu,8404,Ñuble,84,Región del Biobío,8
+Coihueco,8405,Ñuble,84,Región del Biobío,8
+Chillán Viejo,8406,Ñuble,84,Región del Biobío,8
+El Carmen,8407,Ñuble,84,Región del Biobío,8
+Ninhue,8408,Ñuble,84,Región del Biobío,8
+Ñiquén,8409,Ñuble,84,Región del Biobío,8
+Pemuco,8410,Ñuble,84,Región del Biobío,8
+Pinto,8411,Ñuble,84,Región del Biobío,8
+Portezuelo,8412,Ñuble,84,Región del Biobío,8
+Quillón,8413,Ñuble,84,Región del Biobío,8
+Quirihue,8414,Ñuble,84,Región del Biobío,8
+Ránquil,8415,Ñuble,84,Región del Biobío,8
+San Carlos,8416,Ñuble,84,Región del Biobío,8
+San Fabián,8417,Ñuble,84,Región del Biobío,8
+San Ignacio,8418,Ñuble,84,Región del Biobío,8
+San Nicolás,8419,Ñuble,84,Región del Biobío,8
+Treguaco,8420,Ñuble,84,Región del Biobío,8
+Yungay,8421,Ñuble,84,Región del Biobío,8
+Temuco,9101,Cautín,91,Región de la Araucanía,9
+Carahue,9102,Cautín,91,Región de la Araucanía,9
+Cunco,9103,Cautín,91,Región de la Araucanía,9
+Curarrehue,9104,Cautín,91,Región de la Araucanía,9
+Freire,9105,Cautín,91,Región de la Araucanía,9
+Galvarino,9106,Cautín,91,Región de la Araucanía,9
+Gorbea,9107,Cautín,91,Región de la Araucanía,9
+Lautaro,9108,Cautín,91,Región de la Araucanía,9
+Loncoche,9109,Cautín,91,Región de la Araucanía,9
+Melipeuco,9110,Cautín,91,Región de la Araucanía,9
+Nueva Imperial,9111,Cautín,91,Región de la Araucanía,9
+Padre las Casas,9112,Cautín,91,Región de la Araucanía,9
+Perquenco,9113,Cautín,91,Región de la Araucanía,9
+Pitrufquén,9114,Cautín,91,Región de la Araucanía,9
+Pucón,9115,Cautín,91,Región de la Araucanía,9
+Saavedra,9116,Cautín,91,Región de la Araucanía,9
+Teodoro Schmidt,9117,Cautín,91,Región de la Araucanía,9
+Toltén,9118,Cautín,91,Región de la Araucanía,9
+Vilcún,9119,Cautín,91,Región de la Araucanía,9
+Villarrica,9120,Cautín,91,Región de la Araucanía,9
+Cholchol,9121,Cautín,91,Región de la Araucanía,9
+Angol,9201,Malleco,92,Región de la Araucanía,9
+Collipulli,9202,Malleco,92,Región de la Araucanía,9
+Curacautín,9203,Malleco,92,Región de la Araucanía,9
+Ercilla,9204,Malleco,92,Región de la Araucanía,9
+Lonquimay,9205,Malleco,92,Región de la Araucanía,9
+Los Sauces,9206,Malleco,92,Región de la Araucanía,9
+Lumaco,9207,Malleco,92,Región de la Araucanía,9
+Purén,9208,Malleco,92,Región de la Araucanía,9
+Renaico,9209,Malleco,92,Región de la Araucanía,9
+Traiguén,9210,Malleco,92,Región de la Araucanía,9
+Victoria,9211,Malleco,92,Región de la Araucanía,9
+Puerto Montt,10101,Llanquihue,101,Región de Los Lagos,10
+Calbuco,10102,Llanquihue,101,Región de Los Lagos,10
+Cochamó,10103,Llanquihue,101,Región de Los Lagos,10
+Fresia,10104,Llanquihue,101,Región de Los Lagos,10
+Frutillar,10105,Llanquihue,101,Región de Los Lagos,10
+Los Muermos,10106,Llanquihue,101,Región de Los Lagos,10
+Llanquihue,10107,Llanquihue,101,Región de Los Lagos,10
+Maullín,10108,Llanquihue,101,Región de Los Lagos,10
+Puerto Varas,10109,Llanquihue,101,Región de Los Lagos,10
+Castro,10201,Chiloé,102,Región de Los Lagos,10
+Ancud,10202,Chiloé,102,Región de Los Lagos,10
+Chonchi,10203,Chiloé,102,Región de Los Lagos,10
+Curaco de Vélez,10204,Chiloé,102,Región de Los Lagos,10
+Dalcahue,10205,Chiloé,102,Región de Los Lagos,10
+Puqueldón,10206,Chiloé,102,Región de Los Lagos,10
+Queilén,10207,Chiloé,102,Región de Los Lagos,10
+Quellón,10208,Chiloé,102,Región de Los Lagos,10
+Quemchi,10209,Chiloé,102,Región de Los Lagos,10
+Quinchao,10210,Chiloé,102,Región de Los Lagos,10
+Osorno,10301,Osorno,103,Región de Los Lagos,10
+Puerto Octay,10302,Osorno,103,Región de Los Lagos,10
+Purranque,10303,Osorno,103,Región de Los Lagos,10
+Puyehue,10304,Osorno,103,Región de Los Lagos,10
+Río Negro,10305,Osorno,103,Región de Los Lagos,10
+San Juan de la Costa,10306,Osorno,103,Región de Los Lagos,10
+San Pablo,10307,Osorno,103,Región de Los Lagos,10
+Chaitén,10401,Palena,104,Región de Los Lagos,10
+Futaleufú,10402,Palena,104,Región de Los Lagos,10
+Hualaihué,10403,Palena,104,Región de Los Lagos,10
+Palena,10404,Palena,104,Región de Los Lagos,10
+Coyhaique,11101,Coihaique,111,Región Aisén del Gral. Carlos Ibáñez del Campo,11
+Lago Verde,11102,Coihaique,111,Región Aisén del Gral. Carlos Ibáñez del Campo,11
+Aysén,11201,Aisén,112,Región Aisén del Gral. Carlos Ibáñez del Campo,11
+Cisnes,11202,Aisén,112,Región Aisén del Gral. Carlos Ibáñez del Campo,11
+Guaitecas,11203,Aisén,112,Región Aisén del Gral. Carlos Ibáñez del Campo,11
+Cochrane,11301,Capitán Prat,113,Región Aisén del Gral. Carlos Ibáñez del Campo,11
+O'Higgins,11302,Capitán Prat,113,Región Aisén del Gral. Carlos Ibáñez del Campo,11
+Tortel,11303,Capitán Prat,113,Región Aisén del Gral. Carlos Ibáñez del Campo,11
+Chile Chico,11401,General Carrera,114,Región Aisén del Gral. Carlos Ibáñez del Campo,11
+Río Ibáñez,11402,General Carrera,114,Región Aisén del Gral. Carlos Ibáñez del Campo,11
+Punta Arenas,12101,Magallanes,121,Región de Magallanes y de la Antártica Chilena,12
+Laguna Blanca,12102,Magallanes,121,Región de Magallanes y de la Antártica Chilena,12
+Río Verde,12103,Magallanes,121,Región de Magallanes y de la Antártica Chilena,12
+San Gregorio,12104,Magallanes,121,Región de Magallanes y de la Antártica Chilena,12
+Cabo de Hornos,12201,Antártica Chilena,122,Región de Magallanes y de la Antártica Chilena,12
+Antártica,12202,Antártica Chilena,122,Región de Magallanes y de la Antártica Chilena,12
+Porvenir,12301,Tierra del Fuego,123,Región de Magallanes y de la Antártica Chilena,12
+Primavera,12302,Tierra del Fuego,123,Región de Magallanes y de la Antártica Chilena,12
+Timaukel,12303,Tierra del Fuego,123,Región de Magallanes y de la Antártica Chilena,12
+Natales,12401,Última Esperanza,124,Región de Magallanes y de la Antártica Chilena,12
+Torres del Paine,12402,Última Esperanza,124,Región de Magallanes y de la Antártica Chilena,12
+Santiago,13101,Santiago,131,Región Metropolitana de Santiago,13
+Cerrillos,13102,Santiago,131,Región Metropolitana de Santiago,13
+Cerro Navia,13103,Santiago,131,Región Metropolitana de Santiago,13
+Conchalí,13104,Santiago,131,Región Metropolitana de Santiago,13
+El Bosque,13105,Santiago,131,Región Metropolitana de Santiago,13
+Estación Central,13106,Santiago,131,Región Metropolitana de Santiago,13
+Huechuraba,13107,Santiago,131,Región Metropolitana de Santiago,13
+Independencia,13108,Santiago,131,Región Metropolitana de Santiago,13
+La Cisterna,13109,Santiago,131,Región Metropolitana de Santiago,13
+La Florida,13110,Santiago,131,Región Metropolitana de Santiago,13
+La Granja,13111,Santiago,131,Región Metropolitana de Santiago,13
+La Pintana,13112,Santiago,131,Región Metropolitana de Santiago,13
+La Reina,13113,Santiago,131,Región Metropolitana de Santiago,13
+Las Condes,13114,Santiago,131,Región Metropolitana de Santiago,13
+Lo Barnechea,13115,Santiago,131,Región Metropolitana de Santiago,13
+Lo Espejo,13116,Santiago,131,Región Metropolitana de Santiago,13
+Lo Prado,13117,Santiago,131,Región Metropolitana de Santiago,13
+Macul,13118,Santiago,131,Región Metropolitana de Santiago,13
+Maipú,13119,Santiago,131,Región Metropolitana de Santiago,13
+Ñuñoa,13120,Santiago,131,Región Metropolitana de Santiago,13
+Pedro Aguirre Cerda,13121,Santiago,131,Región Metropolitana de Santiago,13
+Peñalolén,13122,Santiago,131,Región Metropolitana de Santiago,13
+Providencia,13123,Santiago,131,Región Metropolitana de Santiago,13
+Pudahuel,13124,Santiago,131,Región Metropolitana de Santiago,13
+Quilicura,13125,Santiago,131,Región Metropolitana de Santiago,13
+Quinta Normal,13126,Santiago,131,Región Metropolitana de Santiago,13
+Recoleta,13127,Santiago,131,Región Metropolitana de Santiago,13
+Renca,13128,Santiago,131,Región Metropolitana de Santiago,13
+San Joaquín,13129,Santiago,131,Región Metropolitana de Santiago,13
+San Miguel,13130,Santiago,131,Región Metropolitana de Santiago,13
+San Ramón,13131,Santiago,131,Región Metropolitana de Santiago,13
+Vitacura,13132,Santiago,131,Región Metropolitana de Santiago,13
+Puente Alto,13201,Cordillera,132,Región Metropolitana de Santiago,13
+Pirque,13202,Cordillera,132,Región Metropolitana de Santiago,13
+San José de Maipo,13203,Cordillera,132,Región Metropolitana de Santiago,13
+Colina,13301,Chacabuco,133,Región Metropolitana de Santiago,13
+Lampa,13302,Chacabuco,133,Región Metropolitana de Santiago,13
+Tiltil,13303,Chacabuco,133,Región Metropolitana de Santiago,13
+San Bernardo,13401,Maipo,134,Región Metropolitana de Santiago,13
+Buin,13402,Maipo,134,Región Metropolitana de Santiago,13
+Calera de Tango,13403,Maipo,134,Región Metropolitana de Santiago,13
+Paine,13404,Maipo,134,Región Metropolitana de Santiago,13
+Melipilla,13501,Melipilla,135,Región Metropolitana de Santiago,13
+Alhué,13502,Melipilla,135,Región Metropolitana de Santiago,13
+Curacaví,13503,Melipilla,135,Región Metropolitana de Santiago,13
+María Pinto,13504,Melipilla,135,Región Metropolitana de Santiago,13
+San Pedro,13505,Melipilla,135,Región Metropolitana de Santiago,13
+Talagante,13601,Talagante,136,Región Metropolitana de Santiago,13
+El Monte,13602,Talagante,136,Región Metropolitana de Santiago,13
+Isla de Maipo,13603,Talagante,136,Región Metropolitana de Santiago,13
+Padre Hurtado,13604,Talagante,136,Región Metropolitana de Santiago,13
+Peñaflor,13605,Talagante,136,Región Metropolitana de Santiago,13
+Valdivia,14101,Valdivia,141,Región de Los Ríos,14
+Corral,14102,Valdivia,141,Región de Los Ríos,14
+Lanco,14103,Valdivia,141,Región de Los Ríos,14
+Los Lagos,14104,Valdivia,141,Región de Los Ríos,14
+Máfil,14105,Valdivia,141,Región de Los Ríos,14
+Mariquina,14106,Valdivia,141,Región de Los Ríos,14
+Paillaco,14107,Valdivia,141,Región de Los Ríos,14
+Panguipulli,14108,Valdivia,141,Región de Los Ríos,14
+La Unión,14201,Ranco,142,Región de Los Ríos,14
+Futrono,14202,Ranco,142,Región de Los Ríos,14
+Lago Ranco,14203,Ranco,142,Región de Los Ríos,14
+Río Bueno,14204,Ranco,142,Región de Los Ríos,14
+Arica,15101,Arica,151,Arica y Parinacota,15
+Camarones,15102,Arica,151,Arica y Parinacota,15
+Putre,15201,Parinacota,152,Arica y Parinacota,15
+General Lagos,15202,Parinacota,152,Arica y Parinacota,15
