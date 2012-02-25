@@ -36,6 +36,8 @@ La BD la puedes bajar en los formatos se describen en la tabla siguiente, en la 
 +-----------------------+----------------------+------+-----------------+
 | PosgreSQL_utf8        |     ``PosgreSQL``    | Sí   |      UTF-8      |
 +-----------------------+----------------------+------+-----------------+
+| CSV_utf8              |``Hojas de Calculo``  |  -   |      UTF-8      |
++-----------------------+----------------------+------+-----------------+
 
 IR= Integridad referencial
 
@@ -47,9 +49,9 @@ Tenemos la idea de seguir trabajando en esto y generar nuevos formatos que facil
 +-----------------------+----------------------+
 |     **Formato**       |     **Ideal para**   |
 +-----------------------+----------------------+
-| XML				    |		   AJAX		   |
+| XML	                |   AJAX	       |
 +-----------------------+----------------------+
-| JSON					|		   AJAX		   |
+| JSON		 	|   AJAX	       |
 +-----------------------+----------------------+
 
 
