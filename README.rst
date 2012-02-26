@@ -2,8 +2,8 @@
  Chile: "Códigos territoriales (Región, Provincia, Comuna)"
 =====================================
 :Web:         Ver [LACOSOX2010]_ para una descripción más detallada
-:Fecha:       $Date: 2011-09-14 14:00:00 $
-:Versión:     0.2 
+:Fecha:       $Date: 26/02/2012 02:21:00  $
+:Versión:     0.2.1 
 :Licencia:   GPLV3
 :Descripción: Base de datos en diferentes formatos de los códigos territoriales chilenos, útil para implementarlo en proyectos informáticos Chilenos.
 
@@ -52,6 +52,8 @@ Tenemos la idea de seguir trabajando en esto y generar nuevos formatos que facil
 | XML	                |   AJAX	       |
 +-----------------------+----------------------+
 | JSON		 	|   AJAX	       |
++-----------------------+----------------------+
+|+Puntos Geograficos UTM|   GIS  	       |
 +-----------------------+----------------------+
 
 
