@@ -5,7 +5,7 @@
 :Fecha:       $Date: 26/02/2012 02:21:00  $
 :Versión:     0.2.1 
 :Licencia:   GPLV3
-:Descripción: Base de datos en diferentes formatos de los códigos territoriales chilenos, útil para implementarlo en proyectos informáticos Chilenos.
+:Descripción: Base de datos en diferentes formatos de los códigos territoriales chilenos, útil para implementarlo en proyectos informáticos chilenos.
 
 Acerca del proyecto
 =====================================
@@ -13,9 +13,9 @@ Acerca del proyecto
 Este proyecto contiene la base de datos de los códigos territoriales para Chile 
 (actualizados a la fecha 13/09/2011), la base de datos está basada en el último 
 documento oficial [MININT2010]_ publicado por el *"Sistema nacional de 
-información municipal Chileno"* (SINIM) [SINIM2011]_ el cual a su vez se basa en
+información municipal chileno"* (SINIM) [SINIM2011]_ el cual a su vez se basa en
 el Decreto Exento Nº 817 del Ministerio del Interior, publicado en el Diario 
-Oficial el día 26 de Marzo de 2010 . 
+Oficial el día 26 de marzo de 2010 . 
 
 Actualmente puedes encontrar aquí la base de datos en diversos formatos 
 (todos sincronizados con la única fuente de datos oficial). La base de datos es 
@@ -27,7 +27,7 @@ alguna entidad del estado; es decir, no se da ninguna garantía, pero funciona.
 
 Formatos disponibles
 =====================================
-La BD la puedes bajar en los formatos se describen en la tabla siguiente, en la carpeta de cada formato encontrarás un README que explica como implementar y usar el formato específico :
+La BD la puedes bajar en los formatos se describen en la tabla siguiente, en la carpeta de cada formato encontrarás un README que explica cómo implementar y usar el formato específico :
 
 +-----------------------+----------------------+------+-----------------+
 |     **Formato**       |     **Ideal para**   |**IR**| **Codificación**|
@@ -36,7 +36,7 @@ La BD la puedes bajar en los formatos se describen en la tabla siguiente, en la 
 +-----------------------+----------------------+------+-----------------+
 | PosgreSQL_utf8        |     ``PosgreSQL``    | Sí   |      UTF-8      |
 +-----------------------+----------------------+------+-----------------+
-| CSV_utf8              |``Hojas de Calculo``  |  -   |      UTF-8      |
+| CSV_utf8              |``Hojas de Cálculo``  |  -   |      UTF-8      |
 +-----------------------+----------------------+------+-----------------+
 
 IR= Integridad referencial
@@ -53,7 +53,7 @@ Tenemos la idea de seguir trabajando en esto y generar nuevos formatos que facil
 +-----------------------+----------------------+
 | JSON		 	|   AJAX	       |
 +-----------------------+----------------------+
-|+Puntos Geograficos UTM|   GIS  	       |
+|+Puntos Geográficos UTM|   GIS  	       |
 +-----------------------+----------------------+
 
 
