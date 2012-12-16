@@ -6,4 +6,5 @@ A continuación se lista a todas las personas que han contribuido a BDCUT_CL med
 
 - Gustavo Lacoste <gustavo@lacosox.org>
 - Danilo Lacoste <danilo@lacosox.org>
+- djuretic http://github.com/djuretic
 - Roberto Bufadel Silva <jjzd2w@gmail.com>
