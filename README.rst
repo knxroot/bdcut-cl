@@ -38,7 +38,8 @@ La BD la puedes bajar en los formatos se describen en la tabla siguiente, en la 
 +-----------------------+----------------------+------+-----------------+
 | CSV_utf8              |``Hojas de Cálculo``  |  -   |      UTF-8      |
 +-----------------------+----------------------+------+-----------------+
-
+| SQLServer_utf8        |``SQLServer``         |  Sí  |      UTF-8      |
++-----------------------+----------------------+------+-----------------+
 IR= Integridad referencial
 
 
