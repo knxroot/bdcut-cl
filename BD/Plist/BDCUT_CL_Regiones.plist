@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <array>
+    <dict>
+      <key>name</key>
+      <string>Tarapacá</string>
+      <key>region_id</key>
+      <string>1</string>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>Antofagasta</string>
+      <key>region_id</key>
+      <string>2</string>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>Atacama</string>
+      <key>region_id</key>
+      <string>3</string>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>Coquimbo</string>
+      <key>region_id</key>
+      <string>4</string>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>Valparaíso</string>
+      <key>region_id</key>
+      <string>5</string>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>Región del Libertador Gral. Bernardo O'Higgins</string>
+      <key>region_id</key>
+      <string>6</string>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>Región del Maule</string>
+      <key>region_id</key>
+      <string>7</string>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>Región del Biobío</string>
+      <key>region_id</key>
+      <string>8</string>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>Región de la Araucanía</string>
+      <key>region_id</key>
+      <string>9</string>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>Región de Los Lagos</string>
+      <key>region_id</key>
+      <string>10</string>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>Región Aisén del Gral. Carlos Ibáñez del Campo</string>
+      <key>region_id</key>
+      <string>11</string>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>Región de Magallanes y de la Antártica Chilena</string>
+      <key>region_id</key>
+      <string>12</string>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>Región Metropolitana de Santiago</string>
+      <key>region_id</key>
+      <string>13</string>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>Región de Los Ríos</string>
+      <key>region_id</key>
+      <string>14</string>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>Arica y Parinacota</string>
+      <key>region_id</key>
+      <string>15</string>
+    </dict>
+  </array>
+</plist>
