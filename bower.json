@@ -7,7 +7,7 @@
     "djuretic http://github.com/djuretic",
     "Roberto Bufadel Silva <jjzd2w@gmail.com>"
   ],
-  "description": "Chile: 'Códigos territoriales (Región, Provincia, Comuna)'. bdcut-cl es una colección que contiene los códigos y nombres territoriales chilenos en diferentes para ser implementado fácilmente en Bases de datos o proyectos de desarrollo.",
+  "description": "Chile: 'Códigos territoriales (Región, Provincia, Comuna)'. bdcut-cl es una colección que contiene los códigos y nombres territoriales chilenos en diferentes formatos para ser implementado fácilmente en Bases de datos o proyectos de desarrollo.",
   "license": "GPLV3",
   "keywords": [
     "chile",
