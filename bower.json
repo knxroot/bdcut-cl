@@ -2,9 +2,30 @@
   "name": "BDCUT-CL",
   "version": "0.2.2",
   "authors": [
-    "Gustavo Lacoste <gustavo@lacosox.org>"
+    "Gustavo Lacoste <gustavo@lacosox.org>",
+    "Danilo Lacoste <danilo@lacosox.org>",
+    "djuretic http://github.com/djuretic",
+    "Roberto Bufadel Silva <jjzd2w@gmail.com>"
   ],
-  "description": "Una coleccion que contiene los codigos territoriales chilenos en diferentes formatos, BD_CUT es util para implementarlo en proyectos informaticos chilenos.",
+  "description": "Chile: 'Códigos territoriales (Región, Provincia, Comuna)'. bdcut-cl es una colección que contiene los códigos y nombres territoriales chilenos en diferentes para ser implementado fácilmente en Bases de datos o proyectos de desarrollo.",
   "license": "GPLV3",
+  "keywords": [
+    "chile",
+    "region",
+    "provincia",
+    "comuna",
+    "ciudad",
+    "codigos-territoriales",
+    "csv",
+    "json",
+    "mysql",
+    "plist",
+    "posgresql",
+    "sqlserver",
+    "mssql",
+    "ajax",
+    "select",
+    "form"
+  ],
   "private": false
 }

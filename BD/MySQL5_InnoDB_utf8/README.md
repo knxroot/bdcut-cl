@@ -1,6 +1,6 @@
-# BDCUT-CL: MYSQL5 INNODB UTF-8 Versión
+# bdcut-cl: MYSQL5 INNODB UTF-8 Versión
 
-- Web         : https://github.com/knxroot/BDCUT-CL
+- Web         : https://github.com/knxroot/bdcut-cl
 - Autor       : Gustavo Lacoste <gustavo@lacosox.org> , Danilo Lacoste <danilo@lacosox.org>
 - Fecha       : Sun, 18 Sep 2011 01:39:24 -0400
 - Revisión    : Revision: 01
@@ -37,8 +37,6 @@ b) importe el script:
     WHERE
     	REGION_ID = 9
     ORDER BY COMUNA_NOMBRE
-    
-
 
 2.- Cantidad de Comunas por Región
 
