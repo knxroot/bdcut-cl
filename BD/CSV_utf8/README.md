@@ -1,6 +1,6 @@
-# BDCUT_CL: CSV UTF-8 Versión
+# BDCUT-CL: CSV UTF-8 Versión
 
-- Web         : https://github.com/knxroot/BDCUT_CL
+- Web         : https://github.com/knxroot/BDCUT-CL
 - Autor       : Gustavo Lacoste <gustavo@lacosox.org> , Danilo Lacoste <danilo@lacosox.org>
 - Fecha       : Sun, 26/02/2012 02:23:48
 - Revisión    : Revisión: 01

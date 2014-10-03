@@ -1,4 +1,4 @@
-# BDCUT_CL
+# BDCUT-CL
 `Versión: 0.2.2 Estable`
 
 Una colección que contiene los códigos territoriales chilenos en diferentes formatos, BD_CUT es útil para implementarlo en proyectos informáticos chilenos. [Más](http://www.lacosox.org/?q=codigo_territorial_sql_Regiones_provincias_comunas_de_Chile).
