@@ -1,0 +1,10 @@
+{
+  "name": "BDCUT_CL",
+  "version": "0.2.2",
+  "authors": [
+    "Gustavo Lacoste <gustavo@lacosox.org>"
+  ],
+  "description": "Una coleccion que contiene los codigos territoriales chilenos en diferentes formatos, BD_CUT es util para implementarlo en proyectos informaticos chilenos.",
+  "license": "GPLV3",
+  "private": false
+}
