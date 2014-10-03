@@ -3,6 +3,13 @@
 
 Una colección que contiene los códigos territoriales chilenos en diferentes formatos, BD_CUT es útil para implementarlo en proyectos informáticos chilenos. [Más](http://www.lacosox.org/?q=codigo_territorial_sql_Regiones_provincias_comunas_de_Chile).
 
+## Instalación
+
+- Vía [bower](http://bower.io/#getting-started) (recomendado): `bower install bdcut-cl`
+- Vía [git](http://git-scm.com/docs/git-clone): `git clone git://github.com/knxroot/bdcut-cl.git`
+- Vía [descarga directa](https://github.com/knxroot/bdcut-cl/archive/master.zip)
+
+
 ## Acerca del proyecto
 
 Este proyecto contiene la base de datos de los códigos territoriales para Chile
