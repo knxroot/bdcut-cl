@@ -1,7 +1,11 @@
 # bdcut-cl
 `Versión: 0.2.2 Estable`
 
-Chile: 'Códigos territoriales (Región, Provincia, Comuna)'. bdcut-cl es una colección que contiene los códigos y nombres territoriales chilenos en diferentes formatos para ser implementado fácilmente en Bases de datos o proyectos de desarrollo. BD_CUT es útil para implementarlo en proyectos informáticos chilenos. [Más](http://www.lacosox.org/?q=codigo_territorial_sql_Regiones_provincias_comunas_de_Chile).
+Chile: 'Base de Datos de Códigos Únicos Territoriales Chilenos (Región, Provincia, Comuna)'. bdcut-cl es una colección que contiene los códigos y nombres territoriales chilenos en diferentes formatos para ser implementado fácilmente en Bases de datos o proyectos de desarrollo. BD_CUT es útil para implementarlo en proyectos informáticos chilenos. [Más](http://www.lacosox.org/?q=codigo_territorial_sql_Regiones_provincias_comunas_de_Chile).
+
+### Aviso
+
+Los cambios que podrían darse del actual proyecto de ley que se encuentra en tramitación y que crearía la XVI Región de Ñuble y las provincias de Diguillín, Punilla e Itata se discuten en #4 y sus modificaciones en la rama "proyecto-ley-region-nuble".
 
 ## Instalación
 
