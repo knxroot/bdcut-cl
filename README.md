@@ -5,7 +5,7 @@ Chile: 'Base de Datos de Códigos Únicos Territoriales Chilenos (Región, Provi
 
 ### Aviso
 
-Los cambios que podrían darse del actual proyecto de ley que se encuentra en tramitación y que crearía la XVI Región de Ñuble y las provincias de Diguillín, Punilla e Itata se discuten en #4 y sus modificaciones en la rama "proyecto-ley-region-nuble".
+Los cambios que podrían darse del actual proyecto de ley que se encuentra en tramitación y que crearía la XVI Región de Ñuble y las provincias de Diguillín, Punilla e Itata se discuten en [#4](https://github.com/knxroot/bdcut-cl/issues/4) y sus modificaciones en la rama "proyecto-ley-region-nuble".
 
 ## Instalación
 
