@@ -66,7 +66,8 @@ ALTER TABLE public.provincia OWNER TO postgres;
 
 CREATE TABLE region (
     "REGION_ID" integer DEFAULT 0 NOT NULL,
-    "REGION_NOMBRE" character varying(50)
+    "REGION_NOMBRE" character varying(50),
+    "ISO_3166_2_CL" character varying(5)
 );
 
 
@@ -492,22 +493,22 @@ COPY provincia ("PROVINCIA_ID", "PROVINCIA_NOMBRE", "PROVINCIA_REGION_ID") FROM 
 -- Data for Name: region; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY region ("REGION_ID", "REGION_NOMBRE") FROM stdin;
-1	Tarapacá
-2	Antofagasta
-3	Atacama
-4	Coquimbo
-5	Valparaíso
-6	Región del Libertador Gral. Bernardo O’Higgins
-7	Región del Maule
-8	Región del Biobío
-9	Región de la Araucanía
-10	Región de Los Lagos
-11	Región Aisén del Gral. Carlos Ibáñez del Campo
-12	Región de Magallanes y de la Antártica Chilena
-13	Región Metropolitana de Santiago
-14	Región de Los Ríos
-15	Arica y Parinacota
+COPY region ("REGION_ID", "REGION_NOMBRE", "ISO_3166_2_CL") FROM stdin;
+1	Tarapacá	CL-TA
+2	Antofagasta	CL-AN
+3	Atacama	CL-AT
+4	Coquimbo	CL-CO
+5	Valparaíso	CL-VS
+6	Región del Libertador Gral. Bernardo O’Higgins	CL-LI
+7	Región del Maule	CL-ML
+8	Región del Biobío	CL-BI
+9	Región de la Araucanía	CL-AR
+10	Región de Los Lagos	CL-LL
+11	Región Aisén del Gral. Carlos Ibáñez del Campo	CL-AI
+12	Región de Magallanes y de la Antártica Chilena	CL-MA
+13	Región Metropolitana de Santiago	CL-RM
+14	Región de Los Ríos	CL-LR
+15	Arica y Parinacota	CL-AP
 \.
 
 
