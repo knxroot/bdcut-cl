@@ -251,27 +251,6 @@ COPY comuna ("COMUNA_ID", "COMUNA_NOMBRE", "COMUNA_PROVINCIA_ID") FROM stdin;
 8312	Tucapel	83
 8313	Yumbel	83
 8314	Alto Biobío	83
-8401	Chillán	84
-8402	Bulnes	84
-8403	Cobquecura	84
-8404	Coelemu	84
-8405	Coihueco	84
-8406	Chillán Viejo	84
-8407	El Carmen	84
-8408	Ninhue	84
-8409	Ñiquén	84
-8410	Pemuco	84
-8411	Pinto	84
-8412	Portezuelo	84
-8413	Quillón	84
-8414	Quirihue	84
-8415	Ránquil	84
-8416	San Carlos	84
-8417	San Fabián	84
-8418	San Ignacio	84
-8419	San Nicolás	84
-8420	Treguaco	84
-8421	Yungay	84
 9101	Temuco	91
 9102	Carahue	91
 9103	Cunco	91
@@ -423,6 +402,27 @@ COPY comuna ("COMUNA_ID", "COMUNA_NOMBRE", "COMUNA_PROVINCIA_ID") FROM stdin;
 15102	Camarones	151
 15201	Putre	152
 15202	General Lagos	152
+8401	Chillán	163
+8402	Bulnes	163
+8403	Cobquecura	162
+8404	Coelemu	162
+8405	Coihueco	163
+8406	Chillán Viejo	163
+8407	El Carmen	163
+8408	Ninhue	162
+8409	Ñiquén	161
+8410	Pemuco	163
+8411	Pinto	163
+8412	Portezuelo	162
+8413	Quillón	162
+8414	Quirihue	162
+8415	Ránquil	162
+8416	San Carlos	161
+8417	San Fabián	161
+8418	San Ignacio	163
+8419	San Nicolás	161
+8420	Treguaco	162
+8421	Yungay	163
 \.
 
 
@@ -460,7 +460,6 @@ COPY provincia ("PROVINCIA_ID", "PROVINCIA_NOMBRE", "PROVINCIA_REGION_ID") FROM 
 81	Concepción	8
 82	Arauco	8
 83	Biobío	8
-84	Ñuble	8
 91	Cautín	9
 92	Malleco	9
 101	Llanquihue	10
@@ -485,6 +484,9 @@ COPY provincia ("PROVINCIA_ID", "PROVINCIA_NOMBRE", "PROVINCIA_REGION_ID") FROM 
 142	Ranco	14
 151	Arica	15
 152	Parinacota	15
+161 Punilla 16
+162 Itata   16
+163 Diguillín   16
 \.
 
 
@@ -508,6 +510,7 @@ COPY region ("REGION_ID", "REGION_NOMBRE") FROM stdin;
 13	Región Metropolitana de Santiago
 14	Región de Los Ríos
 15	Arica y Parinacota
+16  Región de Ñuble
 \.
 
 
