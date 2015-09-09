@@ -1,5 +1,6 @@
 # bdcut-cl
-`Versión: 0.2.2 Estable`
+`Versión: 0.3 dev` Dando soporte a Nueva Región de Ñuble
+
 
 Chile: 'Códigos territoriales (Región, Provincia, Comuna)'. bdcut-cl es una colección que contiene los códigos y nombres territoriales chilenos en diferentes formatos para ser implementado fácilmente en Bases de datos o proyectos de desarrollo. BD_CUT es útil para implementarlo en proyectos informáticos chilenos. [Más](http://www.lacosox.org/?q=codigo_territorial_sql_Regiones_provincias_comunas_de_Chile).
 
