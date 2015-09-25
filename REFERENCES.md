@@ -6,5 +6,5 @@
 * En el sitio Statoids suplemento del libro "Administrative Subdivisions of Countries: A Comprehensive World Reference, 1900 Through 1998" (Law, G., ISBN: 9780786407293) se propone el código [ihasc](http://www.statoids.com/ihasc.html) para [regiones](http://www.statoids.com/ucl.html) y [provincias] (http://www.statoids.com/ycl.html)
 * Mapas vectoriales Chile [bcn.cl] (http://siit2.bcn.cl/mapas_vectoriales/index_html/)
 * Schema.org [AdministrativeArea schema](http://schema.org/AdministrativeArea)
-* Revision **en ingles** de [como categorizar una DPA para SIG](http://wiki.openstreetmap.org/wiki/Tag:admin%20level=8?uselang=en-US)
+* Revision de OpenStreetMap **en ingles** sobre [como categorizar una DPA para SIG](http://wiki.openstreetmap.org/wiki/Tag:admin%20level=8?uselang=en-US)
 * Boundaries de OpenStreetMap de la descripcion de una DPA [ej. Santiago](http://www.openstreetmap.org/relation/164609)
