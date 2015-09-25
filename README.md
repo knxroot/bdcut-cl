@@ -41,6 +41,7 @@ La BD la puedes bajar en los formatos se describen en la tabla siguiente, en la 
 | SQLServer_utf8        |``SQLServer``         |            Sí            |      UTF-8      |
 | Plist                 |``Property List XML`` |            Sí            |      UTF-8      |
 | JSON                  |``AJAX``              |            Sí            |      UTF-8      |
+| Oracle_utf8           |``Oracle PL/SQL``     |            Sí            |      UTF-8      |
 
 
 #Formatos Futuros
@@ -50,7 +51,7 @@ Tenemos la idea de seguir trabajando en esto y generar nuevos formatos que facil
 
 |     **Formato**         |     **Ideal para**   |
 |-------------------------|----------------------|
-| XML	                  |         AJAX         |
+| XML                     |         AJAX         |
 |+Puntos Geográficos UTM  |          GIS         |
 
 
