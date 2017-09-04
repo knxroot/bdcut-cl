@@ -3,11 +3,13 @@
 
 Chile: 'Base de Datos de Códigos Únicos Territoriales Chilenos (Región, Provincia, Comuna)'. bdcut-cl es una colección que contiene los códigos y nombres territoriales chilenos en diferentes formatos para ser implementado fácilmente en Bases de datos o proyectos de desarrollo. BD_CUT es útil para implementarlo en proyectos informáticos chilenos. [Más](http://www.lacosox.org/?q=codigo_territorial_sql_Regiones_provincias_comunas_de_Chile).
 
-### Aviso
+## **Proyecto Ley Region Ñuble**
+ 
+- El caso [#4](https://github.com/knxroot/bdcut-cl/issues/4) y sus modificaciones en la rama [proyecto-ley-region-nuble](https://github.com/knxroot/bdcut-cl/branches) han resuelto el problema de la nueva XVI Región de Ñuble. Por Ahora puedes descargar esa rama, pronto se sumará a la rama principal.
+
+## Aviso
 
 - Observe que el decreto oficial ha asignado algunos nombres de regiones con la palabra “Región de”, mientras que para otras regiones no lo ha considerado. Este proyecto mantendrá los nombres oficiales indicados en el decreto. Revise más detalles en las discusiones sobre [Inconsistencias](https://github.com/knxroot/bdcut-cl/issues?q=label%3AInconsistencias+). Considere revisar también las fuentes de los datos que usa este proyecto en el archivo [REFERENCES.md](https://github.com/knxroot/bdcut-cl/blob/master/REFERENCES.md)
- 
-- Los cambios que podrían darse del actual proyecto de ley que se encuentra en tramitación y que crearía la XVI Región de Ñuble y las provincias de Diguillín, Punilla e Itata se discuten en [#4](https://github.com/knxroot/bdcut-cl/issues/4) y sus modificaciones en la rama [proyecto-ley-region-nuble](https://github.com/knxroot/bdcut-cl/branches).
 
 ## Instalación
 
