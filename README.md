@@ -7,6 +7,8 @@ Chile: 'Base de Datos de Códigos Únicos Territoriales Chilenos (Región, Provi
  
 - El caso [#4](https://github.com/knxroot/bdcut-cl/issues/4) y sus modificaciones en la rama [proyecto-ley-region-nuble](https://github.com/knxroot/bdcut-cl/branches) han resuelto el problema de la nueva XVI Región de Ñuble. Por Ahora puedes descargar esa rama, pronto se sumará a la rama principal.
 
+- La versión 0.3 beta contiene los cambios necesarios para soportar Ñuble, https://github.com/knxroot/bdcut-cl/tree/v0.3-beta
+
 ## Aviso
 
 - Observe que el decreto oficial ha asignado algunos nombres de regiones con la palabra “Región de”, mientras que para otras regiones no lo ha considerado. Este proyecto mantendrá los nombres oficiales indicados en el decreto. Revise más detalles en las discusiones sobre [Inconsistencias](https://github.com/knxroot/bdcut-cl/issues?q=label%3AInconsistencias+). Considere revisar también las fuentes de los datos que usa este proyecto en el archivo [REFERENCES.md](https://github.com/knxroot/bdcut-cl/blob/master/REFERENCES.md)
