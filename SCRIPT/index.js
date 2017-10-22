@@ -17,7 +17,7 @@ if (!fs.existsSync(transformerPath)) {
 let outputPath = process.argv[3] || 'output.txt'
 let csvPath = path.resolve(__dirname, '../BD/CSV_utf8/BDCUT_CL__CSV_UTF8.csv' || process.argv[4])
 
-new Promise((resolve) => {
+new Promise(resolve => {
 
     console.log('Leyendo archivo CSV...')
 
@@ -53,15 +53,18 @@ new Promise((resolve) => {
             provincias[provinciaId] = {
                 id: provinciaId,
                 name: provinciaName,
-                regionId
+                regionId,
+                regionName
             }
         }
 
         comunas[comunaId] = {
             id: comunaId,
             name: comunaName,
+            provinciaId,
+            provinciaName,
             regionId,
-            provinciaId
+            regionName
         }
 
     })
@@ -85,7 +88,7 @@ new Promise((resolve) => {
     let replaceWith = (string, variables, replaceRegex) => string.replace(replaceRegex, (match, variable) => variables[variable])
     let replaceWithVariables = string => replaceWith(string, transformer.variables, replaceVariableRegex)
     let replaceWithInfo = null
-    
+
     if (transformer.escape) {
         let escapeRegex = new RegExp(Object.keys(transformer.escape).join('|'), 'g')
         let escape = string => string.replace(escapeRegex, key => transformer.escape[key])
@@ -127,6 +130,3 @@ new Promise((resolve) => {
     })
 
 })
-
-
-
