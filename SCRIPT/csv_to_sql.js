@@ -10,14 +10,14 @@ const fs = require('fs')
 const path = require('path')
 const readline = require('readline')
 
-let transformerPath = process.argv[2]
+let formatPath = process.argv[2]
 
-if (!transformerPath) {
+if (!formatPath) {
     console.log('Faltó especificar la ruta del archivo con el formato')
     process.exit(-1)
 }
 
-if (!fs.existsSync(transformerPath)) {
+if (!fs.existsSync(formatPath)) {
     console.log('El archivo con el formato no existe')
     process.exit(-2)
 }
@@ -88,18 +88,18 @@ new Promise(resolve => {
 
     console.log('Creando archivo a partir del formato...')
 
-    let transformer = require(path.resolve(__dirname, transformerPath))
+    let format = require(path.resolve(__dirname, formatPath))
     let outputStream = fs.createWriteStream(outputPath)
     let replaceVariableRegex = /\$\{(.*?)\}/g
     let replaceInfoRegex = /\$\{_(.*?)\}/g
 
     let replaceWith = (string, variables, replaceRegex) => string.replace(replaceRegex, (match, variable) => variables[variable])
-    let replaceWithVariables = string => replaceWith(string, transformer.variables, replaceVariableRegex)
+    let replaceWithVariables = string => replaceWith(string, format.variables, replaceVariableRegex)
     let replaceWithInfo = null
 
-    if (transformer.escape) {
-        let escapeRegex = new RegExp(Object.keys(transformer.escape).join('|'), 'g')
-        let escape = string => string.replace(escapeRegex, key => transformer.escape[key])
+    if (format.escape) {
+        let escapeRegex = new RegExp(Object.keys(format.escape).join('|'), 'g')
+        let escape = string => string.replace(escapeRegex, key => format.escape[key])
         replaceWithInfo = (string, info) => {
             info = Object.assign({}, info)
             info.name = escape(info.name)
@@ -109,8 +109,8 @@ new Promise(resolve => {
         replaceWithInfo = (string, info) => replaceWith(string, info, replaceInfoRegex)
     }
 
-    if (transformer.pre) {
-        transformer.pre.forEach(v => {
+    if (format.pre) {
+        format.pre.forEach(v => {
             outputStream.write(replaceWithVariables(v) + '\n', 'utf8')
         })
     }
@@ -118,16 +118,16 @@ new Promise(resolve => {
     outputStream.write('\n')
 
     for (let division of ['regiones', 'provincias', 'comunas']) {
-        if (transformer[division]) {
+        if (format[division]) {
             for (let id in container[division]) {
-                outputStream.write(replaceWithVariables(replaceWithInfo(transformer[division], container[division][id])) + '\n', 'utf8')
+                outputStream.write(replaceWithVariables(replaceWithInfo(format[division], container[division][id])) + '\n', 'utf8')
             }
         }
         outputStream.write('\n')
     }
 
-    if (transformer.post) {
-        transformer.post.forEach(v => {
+    if (format.post) {
+        format.post.forEach(v => {
             outputStream.write(replaceWithVariables(v) + '\n', 'utf8')
         })
     }
