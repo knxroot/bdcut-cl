@@ -1,3 +1,11 @@
+/**
+*   Script para generación automática de archivos sql
+*   ## Modo de uso
+* 
+*  node index.js rutaAlArchivoConFormato [rutaOutput] [rutaCSV]
+* 
+*  Ejemplo: node index.js formatos/postgres.json postgres.sql
+*/
 const fs = require('fs')
 const path = require('path')
 const readline = require('readline')
