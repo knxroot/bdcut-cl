@@ -90,17 +90,18 @@ new Promise(resolve => {
 
     let format = require(path.resolve(__dirname, formatPath))
     let outputStream = fs.createWriteStream(outputPath)
+    let separator = format.separator ? format.separator : '\n'
     let replaceVariableRegex = /\$\{(.*?)\}/g
     let replaceInfoRegex = /\$\{_(.*?)\}/g
 
     let replaceWith = (string, variables, replaceRegex) => string.replace(replaceRegex, (match, variable) => variables[variable])
     let replaceWithVariables = string => replaceWith(string, format.variables, replaceVariableRegex)
     let writeArray = array => {
-        if(array) {
+        if (array) {
             array.forEach(v => {
                 outputStream.write(replaceWithVariables(v) + '\n', 'utf8')
             })
-        }        
+        }
     }
     let replaceWithInfo = null
 
@@ -123,14 +124,19 @@ new Promise(resolve => {
         writeArray(format['pre-' + division])
 
         if (format[division]) {
-            for (let id in container[division]) {
-                outputStream.write(replaceWithVariables(replaceWithInfo(format[division], container[division][id])) + '\n', 'utf8')
+
+            let ids = Object.keys(container[division])
+            let last = ids.length - 1
+            let i = 0
+
+            for (let id of ids) {
+                outputStream.write(replaceWithVariables(replaceWithInfo(format[division], container[division][id])) + (i++ !== last ? separator : ''), 'utf8')
             }
         }
     }
 
     writeArray(format.post)
-    
+
     outputStream.end(null, () => {
         outputStream.close()
         console.log('Archivo creado con éxito :)')

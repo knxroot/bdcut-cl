@@ -39,12 +39,12 @@
         ""
     ],
     "regiones": "INSERT INTO ${regionesTable}(${regionId}, ${regionName}) VALUES(${_id}, '${_name}');",
-    "pre-provincias": [""],
+    "pre-provincias": ["\n"],
     "provincias": "INSERT INTO ${provinciasTable}(${provinciaId}, ${provinciaName}, ${provinciaRegionId}) VALUES (${_id}, '${_name}', ${_regionId});",
-    "pre-comunas": [""],
+    "pre-comunas": ["\n"],
     "comunas": "INSERT INTO ${comunasTable}(${comunaId}, ${comunaName}, ${comunaProvinciaId}) VALUES (${_id}, '${_name}', ${_provinciaId});",
     "post": [
-        "",
+        "\n",
         "ALTER TABLE ONLY ${comunasTable} ADD CONSTRAINT ${comunaPk} PRIMARY KEY (${comunaId});",
         "ALTER TABLE ONLY ${provinciasTable} ADD CONSTRAINT ${provinciaPk} PRIMARY KEY (${provinciaId});",
         "ALTER TABLE ONLY ${regionesTable} ADD CONSTRAINT ${regionPk} PRIMARY KEY (${regionId});",
