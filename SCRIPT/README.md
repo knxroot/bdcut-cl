@@ -19,4 +19,9 @@ Linux Ubuntu
  curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
  sudo apt-get install -y nodejs
  
- 
+##Generar madiante comando make
+
+cd bdcut-cl/SCRIPT/
+make 
+
+luego podrá encontrar los archivos en el directorio ../BD correspondiente. 
