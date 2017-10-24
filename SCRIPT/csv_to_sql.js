@@ -95,6 +95,13 @@ new Promise(resolve => {
 
     let replaceWith = (string, variables, replaceRegex) => string.replace(replaceRegex, (match, variable) => variables[variable])
     let replaceWithVariables = string => replaceWith(string, format.variables, replaceVariableRegex)
+    let writeArray = array => {
+        if(array) {
+            array.forEach(v => {
+                outputStream.write(replaceWithVariables(v) + '\n', 'utf8')
+            })
+        }        
+    }
     let replaceWithInfo = null
 
     if (format.escape) {
@@ -109,29 +116,21 @@ new Promise(resolve => {
         replaceWithInfo = (string, info) => replaceWith(string, info, replaceInfoRegex)
     }
 
-    if (format.pre) {
-        format.pre.forEach(v => {
-            outputStream.write(replaceWithVariables(v) + '\n', 'utf8')
-        })
-    }
-
-    outputStream.write('\n')
+    writeArray(format.pre)
 
     for (let division of ['regiones', 'provincias', 'comunas']) {
+
+        writeArray(format['pre-' + division])
+
         if (format[division]) {
             for (let id in container[division]) {
                 outputStream.write(replaceWithVariables(replaceWithInfo(format[division], container[division][id])) + '\n', 'utf8')
             }
         }
-        outputStream.write('\n')
     }
 
-    if (format.post) {
-        format.post.forEach(v => {
-            outputStream.write(replaceWithVariables(v) + '\n', 'utf8')
-        })
-    }
-
+    writeArray(format.post)
+    
     outputStream.end(null, () => {
         outputStream.close()
         console.log('Archivo creado con éxito :)')

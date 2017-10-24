@@ -35,12 +35,16 @@
         "CREATE TABLE ${provinciasTable}(${provinciaId} integer DEFAULT 0 NOT NULL, ${provinciaName} character varying(23), ${provinciaRegionId} integer);",
         "ALTER TABLE public.${provinciasTable} OWNER TO postgres;",
         "CREATE TABLE ${regionesTable}(${regionId} integer DEFAULT 0 NOT NULL, ${regionName} character varying(50));",
-        "ALTER TABLE public.${regionesTable} OWNER TO postgres;"
+        "ALTER TABLE public.${regionesTable} OWNER TO postgres;",
+        ""
     ],
     "regiones": "INSERT INTO ${regionesTable}(${regionId}, ${regionName}) VALUES(${_id}, '${_name}');",
+    "pre-provincias": [""],
     "provincias": "INSERT INTO ${provinciasTable}(${provinciaId}, ${provinciaName}, ${provinciaRegionId}) VALUES (${_id}, '${_name}', ${_regionId});",
+    "pre-comunas": [""],
     "comunas": "INSERT INTO ${comunasTable}(${comunaId}, ${comunaName}, ${comunaProvinciaId}) VALUES (${_id}, '${_name}', ${_provinciaId});",
     "post": [
+        "",
         "ALTER TABLE ONLY ${comunasTable} ADD CONSTRAINT ${comunaPk} PRIMARY KEY (${comunaId});",
         "ALTER TABLE ONLY ${provinciasTable} ADD CONSTRAINT ${provinciaPk} PRIMARY KEY (${provinciaId});",
         "ALTER TABLE ONLY ${regionesTable} ADD CONSTRAINT ${regionPk} PRIMARY KEY (${regionId});",
