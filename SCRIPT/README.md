@@ -22,6 +22,7 @@ Linux Ubuntu
 ##Generar madiante comando make
 
 cd bdcut-cl/SCRIPT/
-make 
+make clean
+make all
 
 luego podrá encontrar los archivos en el directorio ../BD correspondiente. 

@@ -1,6 +1,7 @@
 {
     "comentarios":  [
-    	"Este formato está escrito para MySql"
+    	"Este formato está escrito para SQLServer, basado en el trabajo de",
+	"Autor: Roberto Bufadel Silva <jjzd2w@gmail.com>"
 	],
     "variables": {
         "regionesTable": "region",
@@ -24,12 +25,10 @@
         "'": "''"
     },
     "pre": [
-        "SET SQL_MODE='NO_AUTO_VALUE_ON_ZERO';",
-        "CREATE TABLE IF NOT EXISTS ${comunasTable} (${comunaId} int(5) NOT NULL DEFAULT '0', ${comunaName} varchar(20) DEFAULT NULL, ${comunaProvinciaId} int(3) DEFAULT NULL, PRIMARY KEY (${comunaId}), KEY ${comunaProvinciaId} (${comunaProvinciaId}) ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ;",
-        
-        "CREATE TABLE IF NOT EXISTS ${provinciasTable} (${provinciaId} int(3) NOT NULL DEFAULT '0', ${provinciaName} varchar(23) DEFAULT NULL, ${provinciaRegionId} int(2) DEFAULT NULL, PRIMARY KEY (${provinciaId}), KEY ${provinciaRegionId} (${provinciaRegionId}) ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ;",
-        
-        "CREATE TABLE IF NOT EXISTS ${regionesTable}(${regionId} int(2) NOT NULL DEFAULT '0', ${regionName} varchar(50) DEFAULT NULL,PRIMARY KEY (${regionId}) ) ENGINE=InnoDB DEFAULT CHARSET=utf8;",
+        "",
+        "CREATE TABLE ${regionesTable}(${regionId} int NOT NULL DEFAULT '0', ${regionName} varchar(50) DEFAULT NULL,PRIMARY KEY (${regionId}) );",
+        "CREATE TABLE ${provinciasTable} (${provinciaId} int NOT NULL DEFAULT '0', ${provinciaName} varchar(23) DEFAULT NULL, PRIMARY KEY (${provinciaId}), ${provinciaRegionId} int FOREIGN KEY REFERENCES ${regionesTable}(${regionId});",
+        "CREATE TABLE ${comunasTable} (${comunaId} int NOT NULL DEFAULT '0', ${comunaName} varchar(20) DEFAULT NULL, ${comunaProvinciaId} int FOREIGN KEY REFERENCES ${provinciasTable} (${provinciaId}), PRIMARY KEY (${comunaId});", 
         ""
     ],
     "regiones": "INSERT INTO ${regionesTable}(${regionId}, ${regionName}) VALUES(${_id}, '${_name}');",
@@ -38,8 +37,6 @@
     "pre-comunas": ["\n"],
     "comunas": "INSERT INTO ${comunasTable}(${comunaId}, ${comunaName}, ${comunaProvinciaId}) VALUES (${_id}, '${_name}', ${_provinciaId});",
     "post": [
-        "\n",
-        "ALTER TABLE ${comunasTable} ADD CONSTRAINT ${comunaProvinciaFk} FOREIGN KEY (${comunaProvinciaId}) REFERENCES ${provinciasTable}(${provinciaId}) ON UPDATE CASCADE;",
-        "ALTER TABLE ${provinciasTable} ADD CONSTRAINT ${provinciaRegionFk} FOREIGN KEY (${provinciaRegionId}) REFERENCES ${regionesTable}(${regionId}) ON UPDATE CASCADE;"
+        "\n"
     ]
 }

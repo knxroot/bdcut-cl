@@ -1,4 +1,7 @@
 {
+   "comentarios":  [
+    	"Este formato está escrito para Postgresql"
+	],
     "variables": {
         "regionesTable": "region",
         "provinciasTable": "provincia",

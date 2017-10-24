@@ -10,6 +10,15 @@ const fs = require('fs')
 const path = require('path')
 const readline = require('readline')
 
+let header_text_pre="/**********************************************************\n"+
+		"Este archivo contiene el Script de creación de la base de\n"+
+		"datos de los códigos territoriales para Chile \n"+
+		"SE HA GENERADO AUTOMATICAMENTE a partir de un archivo CSV\n"+
+		"Revise la documentación para más detalle\n"+
+		"Dirección del proyecto en GitHub:\n"+
+		"		https://github.com/knxroot/BDCUT_CL\n"
+let header_text_post="************************************************************/"
+
 let formatPath = process.argv[2]
 
 if (!formatPath) {
@@ -95,7 +104,8 @@ new Promise(resolve => {
     let replaceInfoRegex = /\$\{_(.*?)\}/g
 
     let replaceWith = (string, variables, replaceRegex) => string.replace(replaceRegex, (match, variable) => variables[variable])
-    let replaceWithVariables = string => replaceWith(string, format.variables, replaceVariableRegex)
+    let replaceWithVariables = string => replaceWith(string, format.variables, replaceVariableRegex)  
+    
     let writeArray = array => {
         if (array) {
             array.forEach(v => {
@@ -117,6 +127,9 @@ new Promise(resolve => {
         replaceWithInfo = (string, info) => replaceWith(string, info, replaceInfoRegex)
     }
 
+    outputStream.write(header_text_pre+'\n', 'utf8')
+    writeArray(format.comentarios)
+    outputStream.write(header_text_post+'\n', 'utf8')
     writeArray(format.pre)
 
     for (let division of ['regiones', 'provincias', 'comunas']) {
