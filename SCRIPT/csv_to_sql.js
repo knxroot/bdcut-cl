@@ -127,11 +127,13 @@ new Promise(resolve => {
         replaceWithInfo = (string, info) => replaceWith(string, info, replaceInfoRegex)
     }
 
-    outputStream.write(format.comentarios_var_header, 'utf8')
-    outputStream.write(header_text_pre+'\n', 'utf8')
-    writeArray(format.comentarios)
-    outputStream.write(header_text_post, 'utf8')
-    outputStream.write(format.comentarios_var_post+'\n', 'utf8')
+     if (format.mostrar_comentarios == "yes"){
+	    outputStream.write(format.comentarios_var_header, 'utf8')
+	    outputStream.write(header_text_pre+'\n', 'utf8')
+	    writeArray(format.comentarios)
+	    outputStream.write(header_text_post, 'utf8')
+	    outputStream.write(format.comentarios_var_post+'\n', 'utf8')
+	 }
     
     writeArray(format.pre)
 

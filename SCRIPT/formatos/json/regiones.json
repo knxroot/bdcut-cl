@@ -1,5 +1,11 @@
 {
+    "comentarios_var_header":"",
+    "comentarios_var_post":"",
+    "comentarios":  [""],
+    "mostrar_comentarios":"no",
+    
     "separator": ",\n",
+    
     "pre": [
         "["
     ],

@@ -5,6 +5,7 @@
     	"Este formato está escrito para SQLServer, basado en el trabajo de",
 	"Autor: Roberto Bufadel Silva <jjzd2w@gmail.com>"
 	],
+    "mostrar_comentarios":"yes",
     "variables": {
         "regionesTable": "region",
         "provinciasTable": "provincia",
