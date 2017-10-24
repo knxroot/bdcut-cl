@@ -1,4 +1,6 @@
 {
+    "comentarios_var_header":"/*",
+    "comentarios_var_post":"*/",
     "comentarios":  [
     	"Este formato está escrito para SQLServer, basado en el trabajo de",
 	"Autor: Roberto Bufadel Silva <jjzd2w@gmail.com>"
