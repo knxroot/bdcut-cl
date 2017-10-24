@@ -9,15 +9,17 @@
 const fs = require('fs')
 const path = require('path')
 const readline = require('readline')
-
-let header_text_pre="**********************************************************\n"+
-		"Este archivo contiene el Script de creación de la base de\n"+
-		"datos de los códigos territoriales para Chile \n"+
-		"SE HA GENERADO AUTOMATICAMENTE a partir de un archivo CSV\n"+
-		"Revise la documentación para más detalle\n"+
-		"Dirección del proyecto en GitHub:\n"+
-		"		https://github.com/knxroot/BDCUT_CL\n"
-let header_text_post="************************************************************"
+if (process.stdout._handle) process.stdout._handle.setBlocking(true)
+let header_text_pre =
+    `**********************************************************
+Este archivo contiene el Script de creación de la base de
+datos de los códigos territoriales para Chile
+SE HA GENERADO AUTOMATICAMENTE a partir de un archivo CSV
+Revise la documentación para más detalle
+Dirección del proyecto en GitHub:
+https://github.com/knxroot/BDCUT_CL
+`
+let header_text_post = "************************************************************"
 
 let formatPath = process.argv[2]
 
@@ -61,28 +63,30 @@ new Promise(resolve => {
 
         if (!regiones[regionId]) {
             regiones[regionId] = {
-                id: regionId,
-                name: regionName
+                _id: regionId,
+                _name: regionName,
+                provincias: []
             }
         }
 
         if (!provincias[provinciaId]) {
-            provincias[provinciaId] = {
-                id: provinciaId,
-                name: provinciaName,
-                regionId,
-                regionName
-            }
+            regiones[regionId].provincias.push(provincias[provinciaId] = {
+                _id: provinciaId,
+                _name: provinciaName,
+                _regionId: regionId,
+                _regionName: regionName,
+                comunas: []
+            })
         }
 
-        comunas[comunaId] = {
-            id: comunaId,
-            name: comunaName,
-            provinciaId,
-            provinciaName,
-            regionId,
-            regionName
-        }
+        provincias[provinciaId].comunas.push(comunas[comunaId] = {
+            _id: comunaId,
+            _name: comunaName,
+            _provinciaId: provinciaId,
+            _provinciaName: provinciaName,
+            _regionId: regionId,
+            _regionName: regionName
+        })
 
     })
 
@@ -99,61 +103,126 @@ new Promise(resolve => {
 
     let format = require(path.resolve(__dirname, formatPath))
     let outputStream = fs.createWriteStream(outputPath)
-    let separator = format.separator ? format.separator : '\n'
+    let separator = format.separator ? format.separator : ''
+    let regionesSeparator = format['regiones-separator'] ? format['regiones-separator'] : separator
+    let provinciasSeparator = format['provincias-separator'] ? format['provincias-separator'] : separator
+    let comunasSeparator = format['comunas-separator'] ? format['comunas-separator'] : separator
+    let provinciasRegionSeparator = format['provincias-region-separator'] ? format['provincias-region-separator'] : separator
+    let comunasProvinciaSeparator = format['comunas-provincia-separator'] ? format['comunas-provincia-separator'] : separator
+    let comunasRegionSeparator = format['comunas-region-separator'] ? format['comunas-region-separator'] : separator
     let replaceVariableRegex = /\$\{(.*?)\}/g
-    let replaceInfoRegex = /\$\{_(.*?)\}/g
+    let replaceInfoRegex = /\$\{(_.*?)\}/g
+    let lastRegion = Object.keys(container.regiones).length - 1
 
+    let write = string => outputStream.write(string, 'utf8')
     let replaceWith = (string, variables, replaceRegex) => string.replace(replaceRegex, (match, variable) => variables[variable])
-    let replaceWithVariables = string => replaceWith(string, format.variables, replaceVariableRegex)  
-    
-    let writeArray = array => {
+    let replaceWithVariables = string => replaceWith(string, format.variables, replaceVariableRegex)
+    let replaceAndWriteArray = (array, replaceFunction) => {
         if (array) {
-            array.forEach(v => {
-                outputStream.write(replaceWithVariables(v) + '\n', 'utf8')
+            array.forEach(string => {
+                write(replaceFunction(string))
             })
         }
     }
     let replaceWithInfo = null
+    let writeArrayWithVariables = array => replaceAndWriteArray(array, replaceWithVariables)
+    let writeArrayWithInfo = (info, array) => replaceAndWriteArray(array, string => replaceWithInfo(info, string))
+    let writeWithInfo = (info, stringOrArray) => {
+        if(stringOrArray instanceof Array) {
+            writeArrayWithInfo(info, stringOrArray)
+        } else {
+            write(replaceWithInfo(info, stringOrArray))
+        }
+    }
 
     if (format.escape) {
         let escapeRegex = new RegExp(Object.keys(format.escape).join('|'), 'g')
         let escape = string => string.replace(escapeRegex, key => format.escape[key])
-        replaceWithInfo = (string, info) => {
+        replaceWithInfo = (info, string) => {
             info = Object.assign({}, info)
-            info.name = escape(info.name)
-            return replaceWith(string, info, replaceInfoRegex)
+            info._name = escape(info._name)
+            return replaceWithVariables(replaceWith(string, info, replaceInfoRegex))
         }
     } else {
-        replaceWithInfo = (string, info) => replaceWith(string, info, replaceInfoRegex)
+        replaceWithInfo = (info, string) => replaceWithVariables(replaceWith(string, info, replaceInfoRegex))
     }
 
-     if (format.mostrar_comentarios == "yes"){
-	    outputStream.write(format.comentarios_var_header, 'utf8')
-	    outputStream.write(header_text_pre+'\n', 'utf8')
-	    writeArray(format.comentarios)
-	    outputStream.write(header_text_post, 'utf8')
-	    outputStream.write(format.comentarios_var_post+'\n', 'utf8')
-	 }
-    
-    writeArray(format.pre)
+    if (format.mostrar_comentarios) {
+        write(format.comentarios_var_header)
+        write(header_text_pre)
+        writeArrayWithVariables(format.comentarios)
+        write(header_text_post)
+        write(format.comentarios_var_post)
+    }
 
-    for (let division of ['regiones', 'provincias', 'comunas']) {
+    writeArrayWithVariables(format.pre)
+    writeArrayWithVariables(format['pre-regiones'])
 
-        writeArray(format['pre-' + division])
+    if (format.regiones) {
+        let i = 0
 
-        if (format[division]) {
-
-            let ids = Object.keys(container[division])
-            let last = ids.length - 1
-            let i = 0
-
-            for (let id of ids) {
-                outputStream.write(replaceWithVariables(replaceWithInfo(format[division], container[division][id])) + (i++ !== last ? separator : ''), 'utf8')
-            }
+        for (let id in container.regiones) {
+            writeWithInfo(container.regiones[id], format.regiones)
+            write(i++ !== lastRegion ? regionesSeparator : '')
         }
     }
 
-    writeArray(format.post)
+    writeArrayWithVariables(format['post-regiones'])
+    writeArrayWithVariables(format['pre-provincias'])
+
+    if (format.provincias) {
+        let i = 0
+
+        for (let id in container.regiones) {
+            let lastProvincia = container.regiones[id].provincias.length - 1
+            let j = 0
+
+            writeArrayWithInfo(container.regiones[id], format['pre-provincias-region'])
+
+            for (let provincia of container.regiones[id].provincias) {
+                writeWithInfo(provincia, format.provincias)
+                write(j++ !== lastProvincia ? provinciasSeparator : '')
+            }
+
+            writeArrayWithInfo(container.regiones[id], format['post-provincias-region'])
+            write(i++ !== lastRegion ? provinciasRegionSeparator : '')
+        }
+    }
+
+    writeArrayWithVariables(format['post-provincias'])
+    writeArrayWithVariables(format['pre-comunas'])
+
+    if (format.comunas) {
+        let i = 0
+
+        for (let id in container.regiones) {
+            let lastProvincia = container.regiones[id].provincias.length - 1
+            let j = 0
+
+            writeArrayWithInfo(container.regiones[id], format['pre-comunas-region'])
+
+            for (let provincia of container.regiones[id].provincias) {
+                let lastComuna = provincia.comunas.length - 1
+                let k = 0
+
+                writeArrayWithInfo(provincia, format['pre-comunas-provincia'])
+
+                for (let comuna of provincia.comunas) {
+                    writeWithInfo(comuna, format.comunas)
+                    write(k++ !== lastComuna ? comunasSeparator : '')
+                }
+
+                writeArrayWithInfo(provincia, format['post-comunas-provincia'])
+                write(j++ !== lastProvincia ? comunasProvinciaSeparator : '')
+            }
+
+            writeArrayWithInfo(container.regiones[id], format['post-comunas-region'])
+            write(i++ !== lastRegion ? comunasRegionSeparator : '')
+        }
+    }
+
+    writeArrayWithVariables(format['post-comunas'])
+    writeArrayWithVariables(format.post)
 
     outputStream.end(null, () => {
         outputStream.close()
