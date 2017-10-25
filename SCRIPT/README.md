@@ -6,23 +6,25 @@
 
 Ejemplo: ```node csv_to_sql.js formatos/postgres.json postgres.sql ../BD/CSV_utf8/BDCUT_CL__CSV_UTF8.csv```
 
-## TODO
-
-* Documentación
-* Más formatos
-* Mejorar manejo de errores
-
-
-##Instalar NODEJS
-Linux Ubuntu 
-
+## Instalar NODEJS
+en Linux/Ubuntu 
+```
  curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
  sudo apt-get install -y nodejs
+```
  
-##Generar madiante comando make
+## Generar madiante comando make
+para generar todos los archivos de una sola patá. 
 
+```
 cd bdcut-cl/SCRIPT/
 make clean
 make all
+```
 
 luego podrá encontrar los archivos en el directorio ../BD correspondiente. 
+
+## Crear nuevos formatos
+
+-documentar aqui-
+
