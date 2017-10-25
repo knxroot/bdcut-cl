@@ -1,0 +1,31 @@
+{
+    "mostrar_comentarios": true,
+    "comentarios_var_header": "<!--",
+    "comentarios_var_post": "-->\n",
+    "comentarios": [
+        "Este formato está escrito para PropertyList\n"
+    ],
+    "separator": "",
+     "pre": [
+        "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n",
+        "<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">\n",
+        "<plist version=\"1.0\">\n",
+        "<dict>\n"
+    ],
+    "pre-comunas-provincia": [
+        "\t<key>${_id}</key>\n\t<array>\n"
+    ],
+    "comunas": [
+        "\t<dict>\n",
+        "\t\t<key>name</key>\n\t\t<string>${_name}</string>\n",
+        "\t\t<key>comuna_id</key>\n\t\t<string>${_id}</string>\n",
+        "\t</dict>\n"
+    ],
+    "post-comunas-provincia": [
+        "\t</array>\n"
+    ],
+    "post": [
+        "</dict>\n",
+        "</plist>\n"
+    ]
+}
