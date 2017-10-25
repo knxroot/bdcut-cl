@@ -1,0 +1,44 @@
+{
+    "mostrar_comentarios": true,
+    "comentarios_var_header": "/*",
+    "comentarios_var_post": "*/\n",
+    "comentarios": [
+        "Este formato está escrito para SQLServer, basado en el trabajo de\n",
+        "Autor: Roberto Bufadel Silva <jjzd2w@gmail.com>\n"
+    ],
+    "variables": {
+        "regionesTable": "region",
+        "provinciasTable": "provincia",
+        "comunasTable": "comuna",
+        "regionId": "REGION_ID",
+        "regionName": "REGION_NOMBRE",
+        "provinciaId": "PROVINCIA_ID",
+        "provinciaName": "PROVINCIA_NOMBRE",
+        "provinciaRegionId": "PROVINCIA_REGION_ID",
+        "comunaId": "COMUNA_ID",
+        "comunaName": "COMUNA_NOMBRE",
+        "comunaProvinciaId": "COMUNA_PROVINCIA_ID",
+        "comunaPk": "comuna_pkey",
+        "provinciaPk": "provincia_pkey",
+        "regionPk": "region_pkey",
+        "comunaProvinciaFk": "comuna_COMUNA_PROVINCIA_ID_fkey",
+        "provinciaRegionFk": "provincia_PROVINCIA_REGION_ID_fkey"
+    },
+    "escape": {
+        "'": "''"
+    },
+    "pre": [
+        "\nCREATE TABLE ${regionesTable}(${regionId} int NOT NULL DEFAULT '0', ${regionName} varchar(50) DEFAULT NULL,PRIMARY KEY (${regionId}) );\n",
+        "CREATE TABLE ${provinciasTable} (${provinciaId} int NOT NULL DEFAULT '0', ${provinciaName} varchar(23) DEFAULT NULL, PRIMARY KEY (${provinciaId}), ${provinciaRegionId} int FOREIGN KEY REFERENCES ${regionesTable}(${regionId});\n",
+        "CREATE TABLE ${comunasTable} (${comunaId} int NOT NULL DEFAULT '0', ${comunaName} varchar(20) DEFAULT NULL, ${comunaProvinciaId} int FOREIGN KEY REFERENCES ${provinciasTable} (${provinciaId}), PRIMARY KEY (${comunaId});\n\n"
+    ],
+    "regiones": "INSERT INTO ${regionesTable}(${regionId}, ${regionName}) VALUES(${_id}, '${_name}');\n",
+    "pre-provincias": [
+        "\n"
+    ],
+    "provincias": "INSERT INTO ${provinciasTable}(${provinciaId}, ${provinciaName}, ${provinciaRegionId}) VALUES (${_id}, '${_name}', ${_regionId});\n",
+    "pre-comunas": [
+        "\n"
+    ],
+    "comunas": "INSERT INTO ${comunasTable}(${comunaId}, ${comunaName}, ${comunaProvinciaId}) VALUES (${_id}, '${_name}', ${_provinciaId});\n"
+}

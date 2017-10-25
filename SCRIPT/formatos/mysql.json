@@ -1,0 +1,49 @@
+{
+    "mostrar_comentarios": true,
+    "comentarios_var_header": "/*",
+    "comentarios_var_post": "*/\n",
+    "comentarios": [
+        "Este formato está escrito para MySql\n"
+    ],
+    "variables": {
+        "regionesTable": "region",
+        "provinciasTable": "provincia",
+        "comunasTable": "comuna",
+        "regionId": "REGION_ID",
+        "regionName": "REGION_NOMBRE",
+        "provinciaId": "PROVINCIA_ID",
+        "provinciaName": "PROVINCIA_NOMBRE",
+        "provinciaRegionId": "PROVINCIA_REGION_ID",
+        "comunaId": "COMUNA_ID",
+        "comunaName": "COMUNA_NOMBRE",
+        "comunaProvinciaId": "COMUNA_PROVINCIA_ID",
+        "comunaPk": "comuna_pkey",
+        "provinciaPk": "provincia_pkey",
+        "regionPk": "region_pkey",
+        "comunaProvinciaFk": "comuna_COMUNA_PROVINCIA_ID_fkey",
+        "provinciaRegionFk": "provincia_PROVINCIA_REGION_ID_fkey"
+    },
+    "escape": {
+        "'": "''"
+    },
+    "pre": [
+        "SET SQL_MODE='NO_AUTO_VALUE_ON_ZERO';\n",
+        "CREATE TABLE IF NOT EXISTS ${comunasTable} (${comunaId} int(5) NOT NULL DEFAULT '0', ${comunaName} varchar(20) DEFAULT NULL, ${comunaProvinciaId} int(3) DEFAULT NULL, PRIMARY KEY (${comunaId}), KEY ${comunaProvinciaId} (${comunaProvinciaId}) ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ;\n",
+        "CREATE TABLE IF NOT EXISTS ${provinciasTable} (${provinciaId} int(3) NOT NULL DEFAULT '0', ${provinciaName} varchar(23) DEFAULT NULL, ${provinciaRegionId} int(2) DEFAULT NULL, PRIMARY KEY (${provinciaId}), KEY ${provinciaRegionId} (${provinciaRegionId}) ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ;\n",
+        "CREATE TABLE IF NOT EXISTS ${regionesTable}(${regionId} int(2) NOT NULL DEFAULT '0', ${regionName} varchar(50) DEFAULT NULL,PRIMARY KEY (${regionId}) ) ENGINE=InnoDB DEFAULT CHARSET=utf8;\n",
+        "\n"
+    ],
+    "regiones": "INSERT INTO ${regionesTable}(${regionId}, ${regionName}) VALUES(${_id}, '${_name}');\n",
+    "pre-provincias": [
+        "\n"
+    ],
+    "provincias": "INSERT INTO ${provinciasTable}(${provinciaId}, ${provinciaName}, ${provinciaRegionId}) VALUES (${_id}, '${_name}', ${_regionId});\n",
+    "pre-comunas": [
+        "\n"
+    ],
+    "comunas": "INSERT INTO ${comunasTable}(${comunaId}, ${comunaName}, ${comunaProvinciaId}) VALUES (${_id}, '${_name}', ${_provinciaId});\n",
+    "post": [
+        "\nALTER TABLE ${comunasTable} ADD CONSTRAINT ${comunaProvinciaFk} FOREIGN KEY (${comunaProvinciaId}) REFERENCES ${provinciasTable}(${provinciaId}) ON UPDATE CASCADE;\n",
+        "ALTER TABLE ${provinciasTable} ADD CONSTRAINT ${provinciaRegionFk} FOREIGN KEY (${provinciaRegionId}) REFERENCES ${regionesTable}(${regionId}) ON UPDATE CASCADE;\n"
+    ]
+}
