@@ -14,6 +14,13 @@ let header_text_pre =
     `**********************************************************
 Este archivo contiene el Script de creación de la base de
 datos de los códigos territoriales para Chile
+
+La base de datos está basada en el último documento
+oficial publicado por el \"Sistema nacional de información
+municipal Chileno\" (SINIM) el cual a su vez se basa en el
+Decreto Exento Nº 817 del Ministerio del Interior,
+publicado en el Diario Oficial el día 26 de Marzo de 2010 .
+
 SE HA GENERADO AUTOMATICAMENTE a partir de un archivo CSV
 Revise la documentación para más detalle
 Dirección del proyecto en GitHub:
