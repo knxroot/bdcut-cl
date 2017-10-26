@@ -1,0 +1,48 @@
+{
+    "mostrar_comentarios": true,
+    "comentarios_var_header": "<!--",
+    "comentarios_var_post": "-->\n",
+    "comentarios": [
+        "Este formato está escrito para PropertyList\n"
+    ],
+    "variables": {
+        "regionesTable": "region",
+        "provinciasTable": "provincia",
+        "comunasTable": "comuna",
+        "regionId": "REGION_ID",
+        "regionName": "REGION_NOMBRE",
+        "provinciaId": "PROVINCIA_ID",
+        "provinciaName": "PROVINCIA_NOMBRE",
+        "provinciaRegionId": "PROVINCIA_REGION_ID",
+        "comunaId": "COMUNA_ID",
+        "comunaName": "COMUNA_NOMBRE",
+        "comunaProvinciaId": "COMUNA_PROVINCIA_ID",
+        "comunaPk": "comuna_pkey",
+        "provinciaPk": "provincia_pkey",
+        "regionPk": "region_pkey",
+        "comunaProvinciaFk": "comuna_COMUNA_PROVINCIA_ID_fkey",
+        "provinciaRegionFk": "provincia_PROVINCIA_REGION_ID_fkey"
+    },
+    "pre": [
+        "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n",
+        "<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">\n",
+        "<plist version=\"1.0\">\n",
+        "\t<array>\n"
+    ],
+    "regiones": [
+        "\t\t<dict>\n",
+        "\t\t\t<key>name</key>\n",
+        "\t\t\t<string>${_name}</string>\n",
+        "\t\t\t<key>region_id</key>\n",
+        "\t\t\t<string>${_id}</string>\n",
+        "\t\t</dict>\n"
+    ],
+    "pre-provincias": [],
+    "provincias": "",
+    "pre-comunas": [],
+    "comunas": "",
+    "post": [
+        "\t</array>\n",
+        "</plist>\n"
+    ]
+}

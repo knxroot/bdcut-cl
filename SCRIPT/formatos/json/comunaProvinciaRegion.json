@@ -1,0 +1,35 @@
+{
+    "separator": ",\n",
+    "pre": [
+        "[\n"
+    ],
+    "pre-comunas-region": [
+        "\t{\n",
+        "\t\t\"id\": ${_id},\n",
+        "\t\t\"name\": \"${_name}\",\n",
+        "\t\t\"provincias\": [\n"
+    ],
+    "pre-comunas-provincia": [
+        "\t\t\t{\n",
+        "\t\t\t\t\"id\": ${_id},\n",
+        "\t\t\t\t\"name\": \"${_name}\",\n",
+        "\t\t\t\t\"comunas\": [\n"
+    ],
+    "comunas": [
+        "\t\t\t\t\t{\n",
+        "\t\t\t\t\t\t\"id\": ${_id},\n",
+        "\t\t\t\t\t\t\"name\": \"${_name}\"\n",
+        "\t\t\t\t\t}"
+    ],
+    "post-comunas-provincia": [
+        "\n\t\t\t\t]\n",
+        "\t\t\t}"
+    ],
+    "post-comunas-region": [
+        "\n\t\t]\n",
+        "\t}"
+    ],
+    "post": [
+        "\n]\n"
+    ]
+}

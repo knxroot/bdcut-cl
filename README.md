@@ -1,5 +1,5 @@
 # bdcut-cl
-`Versión: 0.2.2 Estable`
+`Versión: 0.3 dev` Dando soporte a Nueva Región de Ñuble
 
 Chile: 'Base de Datos de Códigos Únicos Territoriales Chilenos (Región, Provincia, Comuna)'. bdcut-cl es una colección que contiene los códigos y nombres territoriales chilenos en diferentes formatos para ser implementado fácilmente en Bases de datos o proyectos de desarrollo. BD_CUT es útil para implementarlo en proyectos informáticos chilenos. [Más](http://www.lacosox.org/?q=codigo_territorial_sql_Regiones_provincias_comunas_de_Chile).
 
@@ -18,6 +18,16 @@ Chile: 'Base de Datos de Códigos Únicos Territoriales Chilenos (Región, Provi
 - Vía [bower](http://bower.io/#getting-started) (recomendado): `bower install bdcut-cl`
 - Vía [git](http://git-scm.com/docs/git-clone): `git clone git://github.com/knxroot/bdcut-cl.git`
 - Vía [descarga directa](https://github.com/knxroot/bdcut-cl/archive/master.zip)
+
+## Generación automática desde el archivo CSV
+
+Se recomienda generar siempre desde la versión CSV, utilizando la herramienta csv_to_sql.js, utilice los siguientes comandos: 
+```
+cd bdcut-cl/SCRIPT/
+make clean
+make all
+```
+Luego, podrá encontrar los archivos generados en la carpeta BD, con el subnombre ```__generado```
 
 
 ## Acerca del proyecto
@@ -39,15 +49,15 @@ alguna entidad del estado; es decir, no se da ninguna garantía, pero funciona.
 La BD la puedes bajar en los formatos se describen en la tabla siguiente, en la carpeta de cada formato encontrarás un README que explica cómo implementar y usar el formato específico :
 
 
-|     **Formato**       |     **Ideal para**   |**Integridad referencial**| **Codificación**|
-|-----------------------|----------------------|--------------------------|-----------------|
-| MySQL5_InnoDB_utf8    |    ``phpMyAdmin3``   |            Sí            |      UTF-8      |
-| PosgreSQL_utf8        |     ``PosgreSQL``    |            Sí            |      UTF-8      |
-| CSV_utf8              |``Hojas de Cálculo``  |             -            |      UTF-8      |
-| SQLServer_utf8        |``SQLServer``         |            Sí            |      UTF-8      |
-| Plist                 |``Property List XML`` |            Sí            |      UTF-8      |
-| JSON                  |``AJAX``              |            Sí            |      UTF-8      |
-| Oracle_utf8           |``Oracle PL/SQL``     |            Sí            |      UTF-8      |
+|     **Formato**       |     **Ideal para**   |**Integridad referencial**| **Codificación**|**Generado automatico**|
+|-----------------------|----------------------|--------------------------|-----------------|-----------------------|
+| CSV_utf8              |``Hojas de Cálculo``  |             -            |      UTF-8      |           -           |
+| MySQL5_InnoDB_utf8    |    ``phpMyAdmin3``   |            Sí            |      UTF-8      |           Sí          |
+| PosgreSQL_utf8        |     ``PosgreSQL``    |            Sí            |      UTF-8      |           Sí          |
+| SQLServer_utf8        |``SQLServer``         |            Sí            |      UTF-8      |           Sí          |
+| Plist                 |``Property List XML`` |            Sí            |      UTF-8      |           Sí          |
+| JSON                  |``AJAX``              |            Sí            |      UTF-8      |           Sí          |
+| Oracle_utf8           |``Oracle PL/SQL``     |            Sí            |      UTF-8      |           NO          |
 
 
 #Formatos Futuros

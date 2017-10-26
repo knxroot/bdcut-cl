@@ -753,92 +753,6 @@
 			"comuna_id": "8314"
 		}
 	],
-	"84": [
-		{
-			"name": "Chillán",
-			"comuna_id": "8401"
-		},
-		{
-			"name": "Bulnes",
-			"comuna_id": "8402"
-		},
-		{
-			"name": "Cobquecura",
-			"comuna_id": "8403"
-		},
-		{
-			"name": "Coelemu",
-			"comuna_id": "8404"
-		},
-		{
-			"name": "Coihueco",
-			"comuna_id": "8405"
-		},
-		{
-			"name": "Chillán Viejo",
-			"comuna_id": "8406"
-		},
-		{
-			"name": "El Carmen",
-			"comuna_id": "8407"
-		},
-		{
-			"name": "Ninhue",
-			"comuna_id": "8408"
-		},
-		{
-			"name": "Ñiquén",
-			"comuna_id": "8409"
-		},
-		{
-			"name": "Pemuco",
-			"comuna_id": "8410"
-		},
-		{
-			"name": "Pinto",
-			"comuna_id": "8411"
-		},
-		{
-			"name": "Portezuelo",
-			"comuna_id": "8412"
-		},
-		{
-			"name": "Quillón",
-			"comuna_id": "8413"
-		},
-		{
-			"name": "Quirihue",
-			"comuna_id": "8414"
-		},
-		{
-			"name": "Ránquil",
-			"comuna_id": "8415"
-		},
-		{
-			"name": "San Carlos",
-			"comuna_id": "8416"
-		},
-		{
-			"name": "San Fabián",
-			"comuna_id": "8417"
-		},
-		{
-			"name": "San Ignacio",
-			"comuna_id": "8418"
-		},
-		{
-			"name": "San Nicolás",
-			"comuna_id": "8419"
-		},
-		{
-			"name": "Treguaco",
-			"comuna_id": "8420"
-		},
-		{
-			"name": "Yungay",
-			"comuna_id": "8421"
-		}
-	],
 	"91": [
 		{
 			"name": "Temuco",
@@ -1489,6 +1403,96 @@
 		{
 			"name": "General Lagos",
 			"comuna_id": "15202"
+		}
+	],
+	"163": [
+		{
+			"name": "Chillán",
+			"comuna_id": "8401"
+		},
+		{
+			"name": "Bulnes",
+			"comuna_id": "8402"
+		},
+		{
+			"name": "Chillán Viejo",
+			"comuna_id": "8406"
+		},
+		{
+			"name": "El Carmen",
+			"comuna_id": "8407"
+		},
+		{
+			"name": "Pemuco",
+			"comuna_id": "8410"
+		},
+		{
+			"name": "Pinto",
+			"comuna_id": "8411"
+		},
+		{
+			"name": "Quillón",
+			"comuna_id": "8413"
+		},
+		{
+			"name": "San Ignacio",
+			"comuna_id": "8418"
+		},
+		{
+			"name": "Yungay",
+			"comuna_id": "8421"
+		}
+	],
+	"162": [
+		{
+			"name": "Cobquecura",
+			"comuna_id": "8403"
+		},
+		{
+			"name": "Coelemu",
+			"comuna_id": "8404"
+		},
+		{
+			"name": "Ninhue",
+			"comuna_id": "8408"
+		},
+		{
+			"name": "Portezuelo",
+			"comuna_id": "8412"
+		},
+		{
+			"name": "Quirihue",
+			"comuna_id": "8414"
+		},
+		{
+			"name": "Ránquil",
+			"comuna_id": "8415"
+		},
+		{
+			"name": "Treguaco",
+			"comuna_id": "8420"
+		}
+	],
+	"161": [
+		{
+			"name": "Coihueco",
+			"comuna_id": "8405"
+		},
+		{
+			"name": "Ñiquén",
+			"comuna_id": "8409"
+		},
+		{
+			"name": "San Carlos",
+			"comuna_id": "8416"
+		},
+		{
+			"name": "San Fabián",
+			"comuna_id": "8417"
+		},
+		{
+			"name": "San Nicolás",
+			"comuna_id": "8419"
 		}
 	]
 }

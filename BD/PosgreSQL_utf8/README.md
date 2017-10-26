@@ -10,7 +10,7 @@
 
 se debe importar desde la terminal, algo asi
 
-psql -U usuario -W -h server tuBBDD < BDCUT_CL__PosgreSQL_utf8.sql
+psql -U usuario -W -h server tuBBDD < BDCUT_CL__PosgreSQL_utf8__generado.sql
 
 ## Notas
 

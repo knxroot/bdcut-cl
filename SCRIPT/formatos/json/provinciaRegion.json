@@ -1,0 +1,21 @@
+{
+    "separator": ",\n",
+    "pre": [
+        "{\n"
+    ],
+    "pre-provincias-region": [
+        "\t\"${_id}\": [\n"
+    ],
+    "provincias": [
+        "\t\t{\n",
+        "\t\t\t\"name\": \"${_name}\",\n",
+        "\t\t\t\"provincia_id\": \"${_id}\"\n",
+        "\t\t}"
+    ],
+    "post-provincias-region": [
+        "\n\t]"
+    ],
+    "post": [
+        "\n}\n"
+    ]
+}

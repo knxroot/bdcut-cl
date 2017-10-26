@@ -129,10 +129,6 @@
 		{
 			"name": "Biobío",
 			"provincia_id": "83"
-		},
-		{
-			"name": "Ñuble",
-			"provincia_id": "84"
 		}
 	],
 	"9": [
@@ -243,6 +239,20 @@
 		{
 			"name": "Parinacota",
 			"provincia_id": "152"
+		}
+	],
+	"16": [
+		{
+			"name": "Diguillín",
+			"provincia_id": "163"
+		},
+		{
+			"name": "Itata",
+			"provincia_id": "162"
+		},
+		{
+			"name": "Punilla",
+			"provincia_id": "161"
 		}
 	]
 }

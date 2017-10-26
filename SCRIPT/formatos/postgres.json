@@ -1,0 +1,68 @@
+{
+    "mostrar_comentarios": true,
+    "comentarios_var_header": "/*",
+    "comentarios_var_post": "*/\n",
+    "comentarios": [
+        "Este formato está escrito para Postgresql\n"
+    ],
+    "variables": {
+        "regionesTable": "region",
+        "provinciasTable": "provincia",
+        "comunasTable": "comuna",
+        "regionId": "REGION_ID",
+        "regionName": "REGION_NOMBRE",
+        "provinciaId": "PROVINCIA_ID",
+        "provinciaName": "PROVINCIA_NOMBRE",
+        "provinciaRegionId": "PROVINCIA_REGION_ID",
+        "comunaId": "COMUNA_ID",
+        "comunaName": "COMUNA_NOMBRE",
+        "comunaProvinciaId": "COMUNA_PROVINCIA_ID",
+        "comunaPk": "comuna_pkey",
+        "provinciaPk": "provincia_pkey",
+        "regionPk": "region_pkey",
+        "comunaProvinciaFk": "comuna_COMUNA_PROVINCIA_ID_fkey",
+        "provinciaRegionFk": "provincia_PROVINCIA_REGION_ID_fkey"
+    },
+    "escape": {
+        "'": "''"
+    },
+    "pre": [
+        "SET statement_timeout = 0;\n",
+        "SET client_encoding = 'UTF8';\n",
+        "SET standard_conforming_strings = off;\n",
+        "SET check_function_bodies = false;\n",
+        "SET client_min_messages = warning;\n",
+        "SET escape_string_warning = off;\n",
+        "SET search_path = public, pg_catalog;\n",
+        "SET default_tablespace = '';\n",
+        "SET default_with_oids = false;\n",
+        "CREATE TABLE ${comunasTable}(${comunaId} integer DEFAULT 0 NOT NULL, ${comunaName} character varying(20), ${comunaProvinciaId} integer);\n",
+        "ALTER TABLE public.${comunasTable} OWNER TO postgres;\n",
+        "CREATE TABLE ${provinciasTable}(${provinciaId} integer DEFAULT 0 NOT NULL, ${provinciaName} character varying(23), ${provinciaRegionId} integer);\n",
+        "ALTER TABLE public.${provinciasTable} OWNER TO postgres;\n",
+        "CREATE TABLE ${regionesTable}(${regionId} integer DEFAULT 0 NOT NULL, ${regionName} character varying(50));\n",
+        "ALTER TABLE public.${regionesTable} OWNER TO postgres;\n\n"
+    ],
+    "regiones": "INSERT INTO ${regionesTable}(${regionId}, ${regionName}) VALUES(${_id}, '${_name}');\n",
+    "pre-provincias": [
+        "\n"
+    ],
+    "provincias": "INSERT INTO ${provinciasTable}(${provinciaId}, ${provinciaName}, ${provinciaRegionId}) VALUES (${_id}, '${_name}', ${_regionId});\n",
+    "pre-comunas": [
+        "\n"
+    ],
+    "comunas": "INSERT INTO ${comunasTable}(${comunaId}, ${comunaName}, ${comunaProvinciaId}) VALUES (${_id}, '${_name}', ${_provinciaId});\n",
+    "post": [
+        "\nALTER TABLE ONLY ${comunasTable} ADD CONSTRAINT ${comunaPk} PRIMARY KEY (${comunaId});\n",
+        "ALTER TABLE ONLY ${provinciasTable} ADD CONSTRAINT ${provinciaPk} PRIMARY KEY (${provinciaId});\n",
+        "ALTER TABLE ONLY ${regionesTable} ADD CONSTRAINT ${regionPk} PRIMARY KEY (${regionId});\n",
+        "CREATE INDEX ${comunaProvinciaId} ON ${comunasTable} USING btree (${comunaProvinciaId});\n",
+        "CREATE INDEX ${provinciaRegionId} ON ${provinciasTable} USING btree (${provinciaRegionId});\n",
+        "ALTER TABLE ONLY ${comunasTable} ADD CONSTRAINT ${comunaProvinciaFk} FOREIGN KEY (${comunaProvinciaId}) REFERENCES ${provinciasTable}(${provinciaId});\n",
+        "ALTER TABLE ONLY ${provinciasTable} ADD CONSTRAINT ${provinciaRegionFk} FOREIGN KEY (${provinciaRegionId}) REFERENCES ${regionesTable}(${regionId});\n",
+        "REVOKE ALL ON SCHEMA public FROM PUBLIC;\n",
+        "REVOKE ALL ON SCHEMA public FROM postgres;\n",
+        "GRANT ALL ON SCHEMA public TO postgres;\n",
+        "GRANT ALL ON SCHEMA public TO PUBLIC;\n"
+    ]
+}

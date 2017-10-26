@@ -1,0 +1,15 @@
+{
+    "separator": ",\n",
+    "pre": [
+        "[\n"
+    ],
+    "regiones": [
+        "\t{\n",
+        "\t\t\"name\": \"${_name}\",\n",
+        "\t\t\"region_id\": \"${_id}\"\n",
+        "\t}"
+    ],
+    "post": [
+        "\n]\n"
+    ]
+}
