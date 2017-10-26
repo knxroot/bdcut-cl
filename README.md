@@ -1,8 +1,17 @@
 # bdcut-cl
 `Versión: 0.3 dev` Dando soporte a Nueva Región de Ñuble
 
+Chile: 'Base de Datos de Códigos Únicos Territoriales Chilenos (Región, Provincia, Comuna)'. bdcut-cl es una colección que contiene los códigos y nombres territoriales chilenos en diferentes formatos para ser implementado fácilmente en Bases de datos o proyectos de desarrollo. BD_CUT es útil para implementarlo en proyectos informáticos chilenos. [Más](http://www.lacosox.org/?q=codigo_territorial_sql_Regiones_provincias_comunas_de_Chile).
 
-Chile: 'Códigos territoriales (Región, Provincia, Comuna)'. bdcut-cl es una colección que contiene los códigos y nombres territoriales chilenos en diferentes formatos para ser implementado fácilmente en Bases de datos o proyectos de desarrollo. BD_CUT es útil para implementarlo en proyectos informáticos chilenos. [Más](http://www.lacosox.org/?q=codigo_territorial_sql_Regiones_provincias_comunas_de_Chile).
+## **Proyecto Ley Region Ñuble**
+ 
+- El caso [#4](https://github.com/knxroot/bdcut-cl/issues/4) y sus modificaciones en la rama [proyecto-ley-region-nuble](https://github.com/knxroot/bdcut-cl/branches) han resuelto el problema de la nueva XVI Región de Ñuble. Por Ahora puedes descargar esa rama, pronto se sumará a la rama principal.
+
+- La versión 0.3 beta contiene los cambios necesarios para soportar Ñuble, https://github.com/knxroot/bdcut-cl/releases
+
+## Aviso
+
+- Observe que el decreto oficial ha asignado algunos nombres de regiones con la palabra “Región de”, mientras que para otras regiones no lo ha considerado. Este proyecto mantendrá los nombres oficiales indicados en el decreto. Revise más detalles en las discusiones sobre [Inconsistencias](https://github.com/knxroot/bdcut-cl/issues?q=label%3AInconsistencias+). Considere revisar también las fuentes de los datos que usa este proyecto en el archivo [REFERENCES.md](https://github.com/knxroot/bdcut-cl/blob/master/REFERENCES.md)
 
 ## Instalación
 
@@ -48,6 +57,7 @@ La BD la puedes bajar en los formatos se describen en la tabla siguiente, en la 
 | SQLServer_utf8        |``SQLServer``         |            Sí            |      UTF-8      |           Sí          |
 | Plist                 |``Property List XML`` |            Sí            |      UTF-8      |           Sí          |
 | JSON                  |``AJAX``              |            Sí            |      UTF-8      |           Sí          |
+| Oracle_utf8           |``Oracle PL/SQL``     |            Sí            |      UTF-8      |           NO          |
 
 
 #Formatos Futuros
@@ -57,7 +67,7 @@ Tenemos la idea de seguir trabajando en esto y generar nuevos formatos que facil
 
 |     **Formato**         |     **Ideal para**   |
 |-------------------------|----------------------|
-| XML	                  |         AJAX         |
+| XML                     |         AJAX         |
 |+Puntos Geográficos UTM  |          GIS         |
 
 

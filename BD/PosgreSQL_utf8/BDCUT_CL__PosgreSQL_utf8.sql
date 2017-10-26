@@ -495,7 +495,6 @@ COPY provincia ("PROVINCIA_ID", "PROVINCIA_NOMBRE", "PROVINCIA_REGION_ID") FROM 
 -- Data for Name: region; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-
 COPY region ("REGION_ID", "REGION_NOMBRE", "ISO_3166_2_CL") FROM stdin;
 1	Tarapacá	CL-TA
 2	Antofagasta	CL-AN

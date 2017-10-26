@@ -6,6 +6,12 @@
 - Licencia:   GPLV3
 - Descripción: Base de datos para PostgreSQL
 
+## Instalación
+
+se debe importar desde la terminal, algo asi
+
+psql -U usuario -W -h server tuBBDD < BDCUT_CL__PosgreSQL_utf8.sql
+
 ## Notas
 
 Este script no ha sido probado en ambiente de producción. Agradeceríamos tus comentarios.
