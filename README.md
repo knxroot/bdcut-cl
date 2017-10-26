@@ -57,7 +57,7 @@ La BD la puedes bajar en los formatos se describen en la tabla siguiente, en la 
 | SQLServer_utf8        |``SQLServer``         |            Sí            |      UTF-8      |           Sí          |
 | Plist                 |``Property List XML`` |            Sí            |      UTF-8      |           Sí          |
 | JSON                  |``AJAX``              |            Sí            |      UTF-8      |           Sí          |
-| Oracle_utf8           |``Oracle PL/SQL``     |            Sí            |      UTF-8      |           NO          |
+| Oracle_utf8           |``Oracle PL/SQL``     |            Sí            |      UTF-8      |           Sí          |
 
 
 #Formatos Futuros
