@@ -1,6 +1,6 @@
 default: all
 
-all: postgresql mysql sqlserver plist json
+all: postgresql mysql sqlserver plist json oracle
 
 postgresql: formatos/postgres.json
 	node csv_to_sql.js formatos/postgres.json ../BD/PosgreSQL_utf8/BDCUT_CL__PosgreSQL_utf8__generado.sql ../BD/CSV_utf8BDCUT_CL__CSV_UTF8.csv
@@ -25,6 +25,9 @@ json: formatos/json/regiones.json formatos/json/provinciaRegion.json formatos/js
 	node csv_to_sql.js  formatos/json/comunaProvinciaRegion.min.json ../BD/JSON/BDCUT_CL_ComunaProvinciaRegion__generado.min.json ../BD/CSV_utf8BDCUT_CL__CSV_UTF8.csv
 	node csv_to_sql.js  formatos/json/comunaProvincia.json ../BD/JSON/BDCUT_CL_ComunaProvincia__generado.json ../BD/CSV_utf8BDCUT_CL__CSV_UTF8.csv	
 	node csv_to_sql.js  formatos/json/comunaProvincia.min.json ../BD/JSON/BDCUT_CL_ComunaProvincia__generado.min.json ../BD/CSV_utf8BDCUT_CL__CSV_UTF8.csv	
+
+oracle: formatos/oracle.json
+	node csv_to_sql.js formatos/oracle.json ../BD/Oracle_utf8/BDCUT_CL__Oracle_utf8__generado.sql ../BD/CSV_utf8BDCUT_CL__CSV_UTF8.csv
 	
 clean:
 	$(RM) ../BD/PosgreSQL_utf8/BDCUT_CL__PosgreSQL_utf8__generado.sql
@@ -41,3 +44,4 @@ clean:
 	$(RM) ../BD/JSON/BDCUT_CL_ComunaProvinciaRegion__generado.min.json
 	$(RM) ../BD/JSON/BDCUT_CL_ComunaProvincia__generado.json
 	$(RM) ../BD/JSON/BDCUT_CL_ComunaProvincia__generado.min.json
+	$(RM) ../BD/Oracle_utf8/BDCUT_CL__Oracle_utf8__generado.sql
