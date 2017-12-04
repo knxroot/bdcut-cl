@@ -1,6 +1,6 @@
 {
 	"name": "bdcut-cl",
-	"version": "0.2.2",
+	"version": "0.3",
 	"description": "Chile: 'Códigos territoriales (Región, Provincia, Comuna)'. bdcut-cl es una colección que contiene los códigos y nombres territoriales chilenos en diferentes formatos para ser implementado fácilmente en Bases de datos o proyectos de desarrollo.",
 	"main": "index.js",
 	"repository": "https://github.com/knxroot/bdcut-cl.git",
