@@ -476,7 +476,7 @@ INSERT INTO `provincia` (`PROVINCIA_ID`, `PROVINCIA_NOMBRE`, `PROVINCIA_REGION_I
 (142, 'Ranco', 14),
 (151, 'Arica', 15),
 (152, 'Parinacota', 15),
-(161, 'Punilla', 16)
+(161, 'Punilla', 16),
 (162, 'Itata', 16),
 (163, 'Diguillín', 16);
 
@@ -512,7 +512,7 @@ INSERT INTO `region` (`REGION_ID`, `REGION_NOMBRE`, `ISO_3166_2_CL`) VALUES
 (12, 'Región de Magallanes y de la Antártica Chilena', 'CL-MA'),
 (13, 'Región Metropolitana de Santiago', 'CL-RM'),
 (14, 'Región de Los Ríos', 'CL-LR'),
-(15, 'Arica y Parinacota', 'CL-AP');
+(15, 'Arica y Parinacota', 'CL-AP'),
 (16, 'Región de Ñuble',  '');
 
 --
